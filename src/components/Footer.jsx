@@ -10,7 +10,7 @@ const Footer = () => {
             {socials.map(({ id, url, icon, title }) => (
               <li key={id}>
                 <a
-                  target="blank"
+                  target="_blank"
                   //   onClick={() => window.open(url, "_blank")}
                   href={url}
                   className="flex size-10 items-center justify-center rounded-full border-2 border-blue-900 opacity-80 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-sky-800"
@@ -28,8 +28,9 @@ const Footer = () => {
 
           <div className="small-compact flex flex-1 flex-wrap items-center justify-center">
             <a
-              target="blank"
-              href=""
+              target="_blank"
+              href="https://github.com/nil1143/nil1143"
+              aria-label="readme"
               className="flex p-2 items-center justify-center rounded-full border-2 border-blue-900 opacity-80 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-sky-800"
             >Source Code</a>
           </div>
