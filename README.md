@@ -14,8 +14,8 @@
 <h2 align="center">About Me</h2>
 <br>
 
-<p align="center">
-I am a passionate self taught Developer with a foundation in frontend technologies and familiar to backend side. An open-minded developer with a passion for continuous learning. My expertise lies in integration, improving user interfaces, and enhancing overall user experiences. I thrive on solving problems and creating innovative solutions.<p>
+<h4 align="center">
+I am self taught developer with a foundation in frontend technologies and also familiar with backend side. An open-minded developer with a passion for continuous learning. My expertise lies in integration, improving user interfaces, and enhancing overall user experiences. I thrive on solving problems and creating innovative solutions.<h4>
 
 <br>
 
@@ -62,22 +62,22 @@ I am a passionate self taught Developer with a foundation in frontend technologi
 <br>
 
 <div align="center">
-<a href="https://github.com/nil1143/saas_landing_stripe">
+
+<a href="https://github.com/nil1143/saas_landing_stripe">nilAI<br>
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=saas_landing_stripe&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="nilai" />
 </a>
 
 <br>
-<a href="https://github.com/nil1143/spotify-mern">
+<a href="https://github.com/nil1143/spotify-mern">Spotify Clone<br>
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=spotify-mern&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="spotify-clone" />
 </a>
 
 <br>
-<a href="https://github.com/nil1143/react-doc-appointment">
+<a href="https://github.com/nil1143/react-doc-appointment">Doc Appointment<br>
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=react-doc-appointment&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="doc-appoinrment" />
 </a>
 </div>
 
-#### <a href="https://github.com/nil1143/[Project-Name]">[Project Name]</a>
 
 <br>
 <h2 align="center">Links </h2>
