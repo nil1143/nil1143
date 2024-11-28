@@ -12,14 +12,15 @@
 </div>
 
 <h2 align="center">About Me</h2>
+<br>
 
-```
-I am a passionate self taught Developer with a foundation in frontend technologies and familiar to backend side. An open-minded developer with a passion for continuous learning. My expertise lies in integration, improving user interfaces, and enhancing overall user experiences. I thrive on solving problems and creating innovative solutions.
-```
+<p align="center">
+I am a passionate self taught Developer with a foundation in frontend technologies and familiar to backend side. An open-minded developer with a passion for continuous learning. My expertise lies in integration, improving user interfaces, and enhancing overall user experiences. I thrive on solving problems and creating innovative solutions.<p>
+
 <br>
 
 <h2 align="center">Languages & Frameworks & Tools I like to work with </h2>
-
+<br>
 <div align="center">
 
 [![HTML5][HTML5]][HTML5-url]
@@ -29,27 +30,36 @@ I am a passionate self taught Developer with a foundation in frontend technologi
 [![Tailwind][Tailwind]][Tailwind-url]
 [![Bootstrap][Bootstrap]][Bootstrap-url] <br>
 [![Vite][Vite]][Vite-url]
-[![NPM][NPM]][NPM-url]
 
 </div>
 
 <br>
 <h2 align="center">Familiar with </h2>
+<br>
 
 <div align="center">
+<h4>Backend</h4>
 
 [![Node][Node]][Node-url]
 [![Express][Express]][Express-url] 
 [![MongoDB2][MongoDB2]][MongoDB2-url]
 [![Django][Django]][Django-url]<br>
-[![Insomnia][Insomnia]][Insomnia-url]
-[![Postman][Postman]][Postman-url]
 
+<h4>Testing</h4>
+
+[![Insomnia][Insomnia]][Insomnia-url]
+[![Postman][Postman]][Postman-url]<br>
+
+<h4>Dependency Management</h4>
+
+[![Yarn][Yarn]][Yarn-url]
+[![NPM][NPM]][NPM-url]
 </div>
 <br>
 
 
 <h2 align="center">Projects</h2>
+<br>
 
 <div align="center">
 <a href="https://github.com/nil1143/saas_landing_stripe">
