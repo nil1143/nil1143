@@ -6,7 +6,6 @@
   </a> 
 </h3>
 
-
 <div align="center">
  <img alt="GIF" src="https://media4.giphy.com/media/11KzOet1ElBDz2/giphy.gif?cid=6c09b952ufa3xxbbm0mpuadm2zaik3wjp4m9luz2ly0lyz8d&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" />
 </div>
@@ -26,7 +25,7 @@ I am self taught developer with a foundation in frontend technologies and also f
 [![HTML5][HTML5]][HTML5-url]
 [![CSS3][CSS3]][CSS3-url]
 [![JS][JS]][JS-url] <br>
-[![React.js][React.js]][React-url] 
+[![React.js][React.js]][React-url]
 [![Tailwind][Tailwind]][Tailwind-url]
 [![Bootstrap][Bootstrap]][Bootstrap-url] <br>
 [![Vite][Vite]][Vite-url]
@@ -41,7 +40,7 @@ I am self taught developer with a foundation in frontend technologies and also f
 <h4>Backend</h4>
 
 [![Node][Node]][Node-url]
-[![Express][Express]][Express-url] 
+[![Express][Express]][Express-url]
 [![MongoDB2][MongoDB2]][MongoDB2-url]
 [![Django][Django]][Django-url]<br>
 
@@ -54,9 +53,9 @@ I am self taught developer with a foundation in frontend technologies and also f
 
 [![Yarn][Yarn]][Yarn-url]
 [![NPM][NPM]][NPM-url]
+
 </div>
 <br>
-
 
 <h2 align="center">Projects</h2>
 <br>
@@ -64,7 +63,7 @@ I am self taught developer with a foundation in frontend technologies and also f
 <div align="center">
 
 <a href="https://github.com/nil1143/saas_landing_stripe">nilAI<br>
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=saas_landing_stripe&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="nilai" />
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=saas_landing_stripe&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="nilai" />
 </a>
 
 <br>
@@ -77,7 +76,6 @@ I am self taught developer with a foundation in frontend technologies and also f
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=react-doc-appointment&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="doc-appoinrment" />
 </a>
 </div>
-
 
 <br>
 <h2 align="center">Links </h2>
