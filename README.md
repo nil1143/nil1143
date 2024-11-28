@@ -1,10 +1,10 @@
 <h1 align="center">Hi, I'm Tom</h1>
 
-<p align="center" style="font-size:22px">
+<h3 align="center" style="font-size:22px">
   Frontend Developer <a href="https://nil1143.com">
     <img src="https://img.shields.io/badge/Portfolio-543DE0?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" style="height:22px;">
   </a> 
-</p>
+</h3>
 
 
 <div align="center">
