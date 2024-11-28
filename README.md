@@ -85,7 +85,12 @@ I am self taught developer with a foundation in frontend technologies and also f
 Send me an email
 <br><br>
 
+```
+tnil1143@gmail.com
+```
+
 [![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=orange&labelColor=3A3B3C&color=orange)](mailto:tnil1143@gmail.com)
+
 
 or check my profiles
 
