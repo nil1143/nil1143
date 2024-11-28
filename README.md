@@ -71,7 +71,7 @@ I am self taught developer with a foundation in frontend technologies and also f
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=spotify-mern&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="spotify-clone" />
 </a>
 
-<br>
+<br><br>
 <a href="https://github.com/nil1143/react-doc-appointment">Doc Appointment<br>
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=react-doc-appointment&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="doc-appoinrment" />
 </a>
