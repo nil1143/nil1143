@@ -32,7 +32,7 @@ const Footer = () => {
               href="https://github.com/nil1143/nil1143"
               aria-label="readme"
               className="flex p-2 items-center justify-center rounded-full border-2 border-blue-900 opacity-80 border-s4/25 bg-s1/5 transition-all duration-500 hover:border-sky-800"
-            >ReadMe</a>
+            >Read Me</a>
           </div>
 
           <div className="small-compact flex flex-1 flex-wrap items-center justify-center">
