@@ -25,9 +25,9 @@ I am self taught developer with a foundation in frontend technologies and also f
 [![HTML5][HTML5]][HTML5-url]
 [![CSS3][CSS3]][CSS3-url]
 [![JS][JS]][JS-url] <br>
-[![React.js][React.js]][React-url]
 [![Tailwind][Tailwind]][Tailwind-url]
 [![Bootstrap][Bootstrap]][Bootstrap-url] <br>
+[![React.js][React.js]][React-url]
 [![Vite][Vite]][Vite-url]
 
 </div>
