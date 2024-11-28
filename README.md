@@ -124,7 +124,7 @@ or check my profiles
 [Django-url]: https://www.djangoproject.com/
 [Canva]: https://img.shields.io/badge/canva-white?style=for-the-badge&logo=canva
 [Canva-url]: https://www.canva.com/
-[Vite]: https://img.shields.io/badge/vite-lightgray?style=for-the-badge&logo=vite
+[Vite]: https://img.shields.io/badge/vite-white?style=for-the-badge&logo=vite
 [Vite-url]: https://vite.dev/
 [NPM]: https://img.shields.io/badge/NPM-gray?style=for-the-badge&logo=npm
 [NPM-url]: https://www.npmjs.com/
