@@ -161,7 +161,7 @@ const projects = [
   {
     name: "nilAI",
     description:
-      "Fully designed and ready for production, modern landing page for SaaS application with possibility to make a test payment via Stripe payment gateway. MERN stack.",
+      "Fully designed and ready for production, modern landing page for SaaS application with possibility to make a test payment with Stripe payment gateway.",
     tags: [
       {
         name: "react",
@@ -185,7 +185,7 @@ const projects = [
     live_link: "https://sass-landing-stripe-frontend.onrender.com",
   },
   {
-    name: "Spotify Clone",
+    name: "Spotify Clone MERN",
     description:
       "A web application that replicates the core functionality of the popular music streaming service Spotify. It allows users to browse songs and albums and play music, also contains Admin Panel to create and manage songs & playlists.",
     tags: [
@@ -213,7 +213,7 @@ const projects = [
   {
     name: "Doctor Appointment",
     description:
-      "The frontend application that enables users to search and filter through specialized doctors.",
+      "A React application that enables users to search and filter specialized doctors.",
     tags: [
       {
         name: "react",
