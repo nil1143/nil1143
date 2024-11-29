@@ -85,9 +85,16 @@ I am self taught developer with a foundation in frontend technologies and also f
 
 </div>
 
+<h2 align="center">Github Stats</h2>
+
+<div align="center">
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=nil1143&show_icons=true&theme=dark)
+
+</div>
 
 <br>
-<h2 align="center">Links </h2>
+<h2 align="center">Contact </h2>
 
 <br>
 <div align="center">
