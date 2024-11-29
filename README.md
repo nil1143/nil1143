@@ -74,6 +74,8 @@ I am self taught developer with a foundation in frontend technologies and also f
 
   ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=react-doc-appointment\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
 
+![nilAI](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=saas_landing_stripe\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
+
 </div>
 
 
