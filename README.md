@@ -62,20 +62,20 @@ I am self taught developer with a foundation in frontend technologies and also f
 
 <div align="center">
 
-<a href="https://github.com/nil1143/saas_landing_stripe">nilAI<br>
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=saas_landing_stripe&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="nilai" />
-</a>
+<h3>nilAI</h3>
 
-<br>
-<a href="https://github.com/nil1143/spotify-mern">Spotify Clone<br>
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=spotify-mern&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="spotify-clone" />
-</a>
+ ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=saas_landing_stripe\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
 
-<br><br>
-<a href="https://github.com/nil1143/react-doc-appointment">Doc Appointment<br>
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=nil1143&repo=react-doc-appointment&show_icons=true&line_height=27&title_color=6aa6f8&text_color=8a919a&icon_color=6aa6f8&bg_color=22272e" alt="doc-appoinrment" />
-</a>
+<h3>Spotify Clone MERN</h3>
+
+ ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=spotify-mern\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
+
+<h3>Doctor Appointment</h3>
+
+  ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=react-doc-appointment\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
+
 </div>
+
 
 <br>
 <h2 align="center">Links </h2>
