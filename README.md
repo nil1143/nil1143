@@ -64,17 +64,24 @@ I am self taught developer with a foundation in frontend technologies and also f
 
 <h3>nilAI</h3>
 
- ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=saas_landing_stripe\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
 
-<h3>Spotify Clone MERN</h3>
+<a href="https://github.com/nil1143/saas_landing_stripe">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=saas_landing_stripe&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
+</a>
 
- ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=spotify-mern\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
+<h3>Spotify MERN</h3>
 
-<h3>Doctor Appointment</h3>
 
-  ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=react-doc-appointment\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
+<a href="https://github.com/nil1143/saas_landing_stripe">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=spotify-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
+</a>
 
-![nilAI](https://github-readme-stats.vercel.app/api/pin?username=nil1143\&repo=saas_landing_stripe\&title_color=6aa6f8\&icon_color=6aa6f8\&text_color=9f9f9f\&bg_color=22272e)
+<h3>nilAI</h3>
+
+
+<a href="https://github.com/nil1143/saas_landing_stripe">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=react-doc-appointment&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
+</a>
 
 </div>
 
