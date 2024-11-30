@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Tom</h1>
 
 <h3 align="center" style="font-size:23px">
-  Frontend Developer <a href="https://nil1143.com"> ╰┈➤
+  Frontend Developer <a href="https://nil1143.com"> ╰┈➤ 
     <img src="https://img.shields.io/badge/Portfolio-543DE0?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" style="height:22px;">
   </a> 
 </h3>
@@ -134,7 +134,7 @@ or check my profiles
 [CSS3-url]: https://www.w3schools.com/css/
 [JS]: https://img.shields.io/badge/javascipt-gray?style=for-the-badge&logo=javascript
 [JS-url]: https://www.w3schools.com/js/
-[Bootstrap]: https://img.shields.io/badge/Bootstrap-2f80ed?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap]: https://img.shields.io/badge/Bootstrap-6f42c1?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com/
 [Django]: https://img.shields.io/badge/django-darkgreen?style=for-the-badge&logo=django
 [Django-url]: https://www.djangoproject.com/
