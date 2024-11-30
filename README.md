@@ -76,7 +76,7 @@ I am self taught developer with a foundation in frontend technologies and also f
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=spotify-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
 </a>
 
-<h3>nilAI</h3>
+<h3>Doc Appointment</h3>
 
 
 <a href="https://github.com/nil1143/react-doc-appointment">
