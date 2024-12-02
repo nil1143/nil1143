@@ -14,11 +14,11 @@
 <br>
 
 <h4 align="center">
-I am self taught developer with a foundation in frontend technologies and also familiar with backend side. An open-minded developer with a passion for continuous learning. My expertise lies in integration, improving user interfaces, and enhancing overall user experiences. I thrive on solving problems and creating innovative solutions.<h4>
+I am a self-taught developer with a strong foundation in frontend technologies and a working knowledge of backend development. I am an open-minded person with a passion for continuous learning and growth. My expertise lies in system integration, optimizing user interfaces, and enhancing overall user experiences. I thrive on solving complex problems and crafting innovative solutions.<h4>
 
 <br>
 
-<h2 align="center">Languages & Frameworks & Tools I like to work with </h2>
+<h2 align="center">Languages & Frameworks & Tools I  work with </h2>
 <br>
 <div align="center">
 
