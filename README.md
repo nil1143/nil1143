@@ -41,13 +41,10 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 
 [![Node][Node]][Node-url]
 [![Express][Express]][Express-url]
-[![MongoDB2][MongoDB2]][MongoDB2-url]
-[![Django][Django]][Django-url]<br>
-
-<h4>Testing</h4>
-
+[![MongoDB2][MongoDB2]][MongoDB2-url]<br>
+[![Django][Django]][Django-url]
 [![Insomnia][Insomnia]][Insomnia-url]
-[![Postman][Postman]][Postman-url]<br>
+<br>
 
 <h4>Dependency Management</h4>
 
