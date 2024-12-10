@@ -14,7 +14,7 @@
 <br>
 
 <h4 align="center">
-I am a self-taught developer with a strong foundation in frontend technologies and a working knowledge of backend development. I am an open-minded person with a passion for continuous learning and growth. My expertise lies in system integration, optimizing user interfaces, and enhancing overall user experiences. I thrive on solving complex problems and crafting innovative solutions.<h4>
+I am a self-taught developer with a strong foundation in frontend technologies and a working knowledge of backend development. An individual with a passion for continuous learning and growth. My expertise lies in system integration, optimizing user interfaces, and enhancing overall user experiences. I thrive on solving complex problems and crafting innovative solutions.<h4>
 
 <br>
 
