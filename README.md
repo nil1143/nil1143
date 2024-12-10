@@ -34,7 +34,6 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 
 <br>
 <h2 align="center">Familiar with </h2>
-<br>
 
 <div align="center">
 <h4>Backend</h4>
