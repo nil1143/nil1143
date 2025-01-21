@@ -81,20 +81,12 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 
 </div>
 <br>
-<h2 align="center">Github Stats</h2>
-<br>
-<div align="center">
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=nil1143&show_icons=true&theme=dark)
-
-</div>
-
-<br>
 <h2 align="center">Contact </h2>
 
 <br>
 <div align="center">
-Send me an email
+Send me an emails
 <br><br>
 
 ```

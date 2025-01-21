@@ -101,33 +101,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Kitchen assistant",
-    company_name: "Shangri-La Hotel",
+    title: "Freelancer- REMOTE",
+    company_name: "Freelance Frontend Developer",
     icon: shangrila,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Apr 2024 -  Oct 2024",
+    points: [
+      "Created custom landing pages for local businesses to enhance their online presence.",
+      "Utilized modern frameworks like React to build interactive user interfaces.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Provided ongoing site maintenance, bug fixes, and performance optimization.",
+    ],
   },
   {
-    title: "Kitchen supervisor",
-    company_name: "Adare Manor Hotel",
-    icon: adaremanor,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-  },
-  {
-    title: "Customer service assistance",
-    company_name: "Viagogo",
-    icon: viagogo,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-  },
-  {
-    title: "Kitchen assistant",
+    title: "Kitchen assistant- FULL TIME",
     company_name: "1826 Restaurant",
     icon: restaurant1826,
     iconBg: "#E6DEDD",
-    date: "Dec 2023 - Present",
+    date: "Dec 2023 - Dec 2024",
+    points: [
+      "Regular daily restaurant tasks.",
+    ],
   },
+  {
+    title: "Customer service assistance- REMOTE",
+    company_name: "Viagogo",
+    icon: viagogo,
+    iconBg: "#383E56",
+    date: "Sep 2022 - Jun 2023",
+    points: [
+      "Aswering customer questions via phone and email regarding products, services and company policies.",
+      "Offering solutions, which could include troubleshooting, replacements, refunds, or escalations to higher support levels.",
+      "Experience with Slack, Microsoft Teams for internal communication, coordination, and sharing customer information with team members.",
+    ],
+  },
+  {
+    title: "Kitchen supervisor- FULL TIME",
+    company_name: "Adare Manor Hotel",
+    icon: adaremanor,
+    iconBg: "#E6DEDD",
+    date: "Aug 2019 - Jun 2022",
+    points: [
+      "Direct experience in leading a team, delegating tasks, and managing staff performance.",
+      "Overseeing and coordinating the work of kitchen porters, ensure cleanliness and compliance with hygiene regulations.",
+      "Training new porters in procedures, health and safety, and proper use of equipment.",
+      "Communicating with other departments management about labor needs, equipment issues, or supply shortages.",
+    ],
+  },
+  
+  
 ];
 
 const testimonials = [
@@ -187,7 +209,7 @@ const projects = [
   {
     name: "Spotify Clone MERN",
     description:
-      "A web application that replicates the core functionality of the popular music streaming service Spotify. It allows users to browse songs and albums and play music, also contains Admin Panel to create and manage songs & playlists.",
+      "A web application that replicates the core functionality of the popular music streaming service Spotify. It allows users to browse songs, albums and play music. Contains Admin Panel to create and manage songs & playlists.",
     tags: [
       {
         name: "react",
