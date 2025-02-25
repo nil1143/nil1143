@@ -28,6 +28,8 @@ import project_spotify from './project-img-spotify.png'
 import project_doc from './project-img-docappointment.png'
 import github_icon from './socials/github.png'
 import linkedin_icon from './socials/linkedin.png'
+import project_jobsearch from "./project-img-jobsearch.png"
+import project_event from './project-img-event.png'
 
 export {
   logo,
@@ -59,5 +61,7 @@ export {
   project_spotify,
   project_doc,
   github_icon,
-  linkedin_icon
+  linkedin_icon,
+  project_jobsearch,
+  project_event
 };

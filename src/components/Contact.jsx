@@ -1,16 +1,16 @@
-import React, { useRef, useState } from "react";
+import { useState } from "react";
 
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
-
-import emailjs from "@emailjs/browser";
 import axios from "axios";
-
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+// import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -34,6 +34,7 @@ const Contact = () => {
     };
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const res = await axios.post(
         "https://api.emailjs.com/api/v1.0/email/send",
         data
@@ -45,6 +46,8 @@ const Contact = () => {
     } catch (error) {
       console.error(error);
     }
+
+    setLoading(false)
   };
 
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
 import { styles } from "../styles";
@@ -6,7 +5,6 @@ import { ComputersCanvas } from "./canvas";
 import { heroContent } from "../constants";
 
 const Hero = () => {
-
   return (
     <section className="relative w-full h-screen mx-auto ">
       <div
@@ -19,14 +17,15 @@ const Hero = () => {
 
         <div className="flex flex-col w-auto ">
           <p className={`${styles.heroHeadText}`}>
-            {heroContent.header1}<span className="text-[#915eff]">{heroContent.header2}</span>
+            {heroContent.header1}
+            <span className="text-[#915eff]">{heroContent.header2}</span>
           </p>
           <p className={`${styles.heroSubText} mt-2`}>
             {heroContent.paragraph1}
-            <br  />{heroContent.paragraph2}
+            <br />
+            {heroContent.paragraph2}
           </p>
         </div>
-        
       </div>
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
@@ -34,11 +33,9 @@ const Hero = () => {
       >
         <ComputersCanvas />
       </motion.div>
-      
-
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about" aria-label="about"> 
+        <a href="#about" aria-label="about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{

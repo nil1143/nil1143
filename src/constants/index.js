@@ -20,6 +20,8 @@ import {
   project_doc,
   github_icon,
   linkedin_icon,
+  project_jobsearch,
+  project_event
 } from "../assets";
 
 export const navLinks = [
@@ -88,7 +90,6 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  ,
   {
     name: "Node JS",
     icon: nodejs,
@@ -119,9 +120,7 @@ const experiences = [
     icon: restaurant1826,
     iconBg: "#E6DEDD",
     date: "Dec 2023 - Dec 2024",
-    points: [
-      "Regular daily restaurant tasks.",
-    ],
+    points: ["Regular daily restaurant tasks."],
   },
   {
     title: "Customer service assistance- REMOTE",
@@ -148,8 +147,6 @@ const experiences = [
       "Communicating with other departments management about labor needs, equipment issues, or supply shortages.",
     ],
   },
-  
-  
 ];
 
 const testimonials = [
@@ -181,6 +178,58 @@ const testimonials = [
 
 const projects = [
   {
+    name: "JobSearch App",
+    description:
+      "A powerful platform connecting job seekers and employers with ease. Built with Next.js and TypeScript, Job Board offers a seamless, secure, and feature-rich experience for exploring jobs, creating listings, and managing profiles—all hosted on Vercel.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project_jobsearch,
+    source_code_link: "https://github.com/nil1143/job-search",
+    live_link: "https://job-search-roan.vercel.app",
+  },
+  {
+    name: "Evently",
+    description:
+      "Evently is a full-stack event management application built using the MERN stack and Next.js framework.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+    ],
+    image: project_event,
+    source_code_link: "https://github.com/nil1143/event-mern",
+    live_link: "https://event-mern-nine.vercel.app/",
+  },
+  {
     name: "nilAI",
     description:
       "Fully designed and ready for production, modern landing page for SaaS application with possibility to make a test payment with Stripe payment gateway.",
@@ -207,7 +256,7 @@ const projects = [
     live_link: "https://sass-landing-stripe-frontend.onrender.com",
   },
   {
-    name: "Spotify Clone MERN",
+    name: "Spotify Clone",
     description:
       "A web application that replicates the core functionality of the popular music streaming service Spotify. It allows users to browse songs, albums and play music. Contains Admin Panel to create and manage songs & playlists.",
     tags: [
@@ -224,7 +273,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "mongoDB",
+        name: "mongodb",
         color: "green-text-gradient",
       },
     ],

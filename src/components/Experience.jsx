@@ -1,4 +1,3 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -20,7 +19,9 @@ const ExperienceCard = ({ experience }) => (
     iconStyle={{ background: experience.iconBg }}
     icon={
       <div className="flex justify-center items-center w-full h-full">
-        <img width={150} height={150}
+        <img
+          width={150}
+          height={150}
           src={experience.icon}
           alt={experience.company_name}
           className=" rounded-full object-contain"
@@ -29,7 +30,9 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      <h3 className="text-white text-[24px] font-bold">{experience.company_name}</h3>
+      <h3 className="text-white text-[24px] font-bold">
+        {experience.company_name}
+      </h3>
       <p
         className="text-secondary text-[16px] font-semibold"
         style={{ margin: 0 }}
@@ -41,9 +44,10 @@ const ExperienceCard = ({ experience }) => (
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
         <li
-        key={`experiences-point-${index}`}
-        className="text-white-100 text-[14px] pl-1 tracking-wider">
-        {point}
+          key={`experiences-point-${index}`}
+          className="text-white-100 text-[14px] pl-1 tracking-wider"
+        >
+          {point}
         </li>
       ))}
     </ul>

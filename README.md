@@ -25,30 +25,29 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 [![HTML5][HTML5]][HTML5-url]
 [![CSS3][CSS3]][CSS3-url]
 [![JS][JS]][JS-url] <br>
-[![Tailwind][Tailwind]][Tailwind-url]
-[![Bootstrap][Bootstrap]][Bootstrap-url] <br>
 [![React.js][React.js]][React-url]
-[![Vite][Vite]][Vite-url]
+[![TypeScript][Typescript]][Nextjs-url] <br>
+[![Nextjs][Nextjs]][Nextjs-url]
+[![Tailwind][Tailwind]][Tailwind-url]
+[![Shadcn][Shadcn]][Shadcn-url]
+ <br>
+
 
 </div>
 
-<br>
 <h2 align="center">Familiar with </h2>
 
 <div align="center">
-<h4>Backend</h4>
+<br>
 
 [![Node][Node]][Node-url]
 [![Express][Express]][Express-url]
 [![MongoDB2][MongoDB2]][MongoDB2-url]<br>
 [![Django][Django]][Django-url]
 [![Insomnia][Insomnia]][Insomnia-url]
+[![Bootstrap][Bootstrap]][Bootstrap-url]
 <br>
 
-<h4>Dependency Management</h4>
-
-[![Yarn][Yarn]][Yarn-url]
-[![NPM][NPM]][NPM-url]
 
 </div>
 <br>
@@ -58,23 +57,33 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 
 <div align="center">
 
+
+<h3>Job Search</h3>
+<h4>Next.js 15, TypeScript</h4>
+<a href="https://job-search-roan.vercel.app/">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=job-search&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e"/>
+</a>
+
+<h3>Evently Booking App</h3>
+<h4>Next.js 15, TypeScript</h4>
+<a href="https://event-mern-nine.vercel.app/">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=event-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" /> </a>
+
 <h3>nilAI</h3>
-
-
+<h4>React, Node.js</h4>
 <a href="https://github.com/nil1143/saas_landing_stripe">
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=saas_landing_stripe&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
 </a>
 
 <h3>Spotify MERN</h3>
-
+<h4>React, Node.js</h4>
 
 <a href="https://github.com/nil1143/spotify-mern">
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=spotify-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
 </a>
 
 <h3>Doc Appointment</h3>
-
-
+<h4>React</h4>
 <a href="https://github.com/nil1143/react-doc-appointment">
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=react-doc-appointment&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
 </a>
@@ -141,3 +150,8 @@ or check my profiles
 [Postman-url]: https://www.postman.com/
 [Yarn]: https://img.shields.io/badge/yarn-117cad?style=for-the-badge&logo=yarn&logoColor=white
 [Yarn-url]: https://classic.yarnpkg.com/en/
+[Nextjs]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Nextjs-url]: https://nextjs.org/
+[Typescript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
+[Shadcn]: https://img.shields.io/badge/shadcn%2Fui-000?logo=shadcnui&logoColor=fff&style=for-the-badge
+[Shadcn-url]: https://ui.shadcn.com/
