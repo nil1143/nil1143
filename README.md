@@ -60,13 +60,13 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 
 <h3>Job Search</h3>
 <h4>Next.js 15, TypeScript</h4>
-<a href="https://job-search-roan.vercel.app/">
+<a href="https://github.com/nil1143/job-search">
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=job-search&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e"/>
 </a>
 
 <h3>Evently Booking App</h3>
 <h4>Next.js 15, TypeScript</h4>
-<a href="https://event-mern-nine.vercel.app/">
+<a href="https://github.com/nil1143/event-mern">
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=event-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" /> </a>
 
 <h3>nilAI</h3>
