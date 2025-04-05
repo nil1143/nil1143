@@ -75,7 +75,7 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=saas_landing_stripe&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
 </a>
 
-<h3>Spotify MERN</h3>
+<!-- <h3>Spotify MERN</h3>
 <h4>React, Node.js</h4>
 
 <a href="https://github.com/nil1143/spotify-mern">
@@ -86,7 +86,7 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 <h4>React</h4>
 <a href="https://github.com/nil1143/react-doc-appointment">
 <img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=react-doc-appointment&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
-</a>
+</a> -->
 
 </div>
 <br>

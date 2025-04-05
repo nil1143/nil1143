@@ -16,8 +16,6 @@ import {
   viagogo,
   shangrila,
   project_nilai,
-  project_spotify,
-  project_doc,
   github_icon,
   linkedin_icon,
   project_jobsearch,
@@ -253,52 +251,9 @@ const projects = [
     ],
     image: project_nilai,
     source_code_link: "https://github.com/nil1143/saas_landing_stripe",
-    live_link: "https://sass-landing-stripe-frontend.onrender.com",
+    live_link: "https://saas-landing-pi.vercel.app/",
   },
-  {
-    name: "Spotify Clone",
-    description:
-      "A web application that replicates the core functionality of the popular music streaming service Spotify. It allows users to browse songs, albums and play music. Contains Admin Panel to create and manage songs & playlists.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-    ],
-    image: project_spotify,
-    source_code_link: "https://github.com/nil1143/spotify-mern",
-    live_link: "https://spotify-mern-frontend.onrender.com",
-  },
-  {
-    name: "Doctor Appointment",
-    description:
-      "A React application that enables users to search and filter specialized doctors.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project_doc,
-    source_code_link: "https://github.com/nil1143/react-doc-appointment",
-    live_link: "https://react-doc-appointment.onrender.com/",
-  },
+  
 ];
 
 const socials = [
