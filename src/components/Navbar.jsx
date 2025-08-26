@@ -23,6 +23,20 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
+
+        {/* Resume button moved here, visible on sm+ */}
+        <div className="sm:flex items-center ml-24 lg:ml-4 ">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/resume.pdf"
+            aria-label="resume"
+            className="flex px-3 py-2 items-center justify-center rounded-full border-2 border-blue-900 opacity-80 bg-s1/5 transition-all duration-500 hover:border-sky-800 text-sm"
+          >
+            Resume
+          </a>
+        </div>
+
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li

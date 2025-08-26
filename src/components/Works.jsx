@@ -1,82 +1,9 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { github, live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-  live_link,
-}) => {
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-
-          <div className="absolute inset-0 flex flex-row gap-2 justify-end m-3 hover:card-img_hover">
-            <div
-              onClick={() => window.open(live_link, "_blank")}
-              className="bg-green-400 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={live}
-                alt="live-preview"
-                className="w-3/4 h-3/4 object-contain"
-              />
-            </div>
-
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-5 min-h-48">
-          <h3 className="text-white font-mono text-[24px]">{name}</h3>
-          <p className="mt-4 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
+import ProjectCard from "./ProjectCard";
 
 const Works = () => {
   return (
@@ -91,21 +18,30 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          These projects showcase practical web apps I built and deployed. Each
+          entry includes a brief description, a detailed README in the source
+          repository, and a live demo — demonstrating problem solving and
+          technical breadth.
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap justify-center gap-7">
+      { /* Replace flex-wrap with a responsive 2-column grid.
+           auto-rows-min + items-start prevents overlapping when cards have different heights.
+           Each card is wrapped in a constrained container (max width + min height + self-start)
+           so transforms/shadows don't overlap neighboring cells and rows align visually. */ }
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 gap-7 auto-rows-min items-start justify-items-center">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <div
+            key={project.name || `project-${index}`}
+            className="relative w-full max-w-[420px] self-start z-0 min-h-[320px] p-1"
+          >
+            <ProjectCard index={index} {...project} />
+          </div>
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "project");
+const WrappedWorks = SectionWrapper(Works, "project");
+export default WrappedWorks;

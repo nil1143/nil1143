@@ -1,34 +1,10 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { services } from "../constants";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { BallCanvas } from "./canvas";
+import { technologies } from "../constants";
 
-const ServiceCard = ({ index, title, icon }) => {
-  return (
-    <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className="xs:w-[250px] w-full"
-    >
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-      >
-        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
-  );
-};
 const About = () => {
   return (
     <>
@@ -37,22 +13,38 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I&apos;m a self-taught developer with experience in frontend services.
-        I&apos;m a quick learner and collaborate closely with collegues &
-        clients to create efficient, scalable, and user-friendly solutions that
-        solve real-world problems. Let&apos;s work together to bring your ideas
-        to life!
-      </motion.p>
+      <div className="pt-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 place-items-center">
+          {technologies.map((technology, i) => (
+            <motion.div
+              key={technology.name}
+              variants={fadeIn("up", "spring", i * 0.12, 0.6)}
+              className="flex flex-col items-center"
+            >
+              <div className="w-28 h-28 flex items-center justify-center">
+                <BallCanvas icon={technology.icon} />
+              </div>
+              <p className="mt-2 text-center text-sm text-secondary">
+                {technology.name}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
 
-      <div className="mt-20 flex flex-wrap gap-8">
+      {/* <div className="flex flex-row flex-wrap md:grid md:grid-cols-4 justify-center gap-10 pt-3">
+        {technologies.map((technology) => (
+          <div className="w-28 h-28 " key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div> */}
+
+      {/* <div className="mt-20 flex flex-wrap gap-8">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

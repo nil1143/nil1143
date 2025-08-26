@@ -6,21 +6,23 @@
   </a> 
 </h3>
 
-<div align="center">
- <img alt="GIF" src="https://media4.giphy.com/media/11KzOet1ElBDz2/giphy.gif?cid=6c09b952ufa3xxbbm0mpuadm2zaik3wjp4m9luz2ly0lyz8d&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" />
-</div>
-
 <h2 align="center">About Me</h2>
-<br>
+
 
 <h4 align="center">
-I am a self-taught developer with a strong foundation in frontend technologies and a working knowledge of backend development. An individual with a passion for continuous learning and growth. My expertise lies in system integration, optimizing user interfaces, and enhancing overall user experiences. I thrive on solving complex problems and crafting innovative solutions.<h4>
+I design and build user‑first web apps end‑to‑end. On the frontend I ship polished React/Next.js interfaces; on the backend I wire up Node, MongoDB, and third‑party APIs like Stripe. Recent work spans real‑time chat, event management, and job platforms. I thrive on turning complex requirements into simple, reliable UX and iterating quickly based on feedback<h4>
 
-<br>
+---
+
 
 <h2 align="center">Languages & Frameworks & Tools I  work with </h2>
 <br>
 <div align="center">
+<p>JavaScript, React, HTML, CSS,
+Tailwind, Typescript, API, Next.js,
+MongoDB, Postgres, Node.js &
+Express, Git
+</p>
 
 [![HTML5][HTML5]][HTML5-url]
 [![CSS3][CSS3]][CSS3-url]
@@ -29,33 +31,29 @@ I am a self-taught developer with a strong foundation in frontend technologies a
 [![TypeScript][Typescript]][Nextjs-url] <br>
 [![Nextjs][Nextjs]][Nextjs-url]
 [![Tailwind][Tailwind]][Tailwind-url]
-[![Shadcn][Shadcn]][Shadcn-url]
- <br>
-
-
-</div>
-
-<h2 align="center">Familiar with </h2>
-
-<div align="center">
-<br>
-
+[![Shadcn][Shadcn]][Shadcn-url]<br>
 [![Node][Node]][Node-url]
 [![Express][Express]][Express-url]
 [![MongoDB2][MongoDB2]][MongoDB2-url]<br>
 [![Django][Django]][Django-url]
-[![Insomnia][Insomnia]][Insomnia-url]
 [![Bootstrap][Bootstrap]][Bootstrap-url]
-<br>
 
 
 </div>
+
+
+
 <br>
 
 <h2 align="center">Projects</h2>
-<br>
 
 <div align="center">
+
+<h3>Streamify</h3>
+<h4>Next.js 15, TypeScript, MongoDB, DaisyUI</h4>
+<a href="https://github.com/nil1143/streamify">
+<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=streamify&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e"/>
+</a>
 
 
 <h3>Job Search</h3>

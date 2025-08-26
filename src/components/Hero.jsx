@@ -20,13 +20,21 @@ const Hero = () => {
             {heroContent.header1}
             <span className="text-[#915eff]">{heroContent.header2}</span>
           </p>
-          <p className={`${styles.heroSubText} mt-2`}>
-            {heroContent.paragraph1}
-            <br />
-            {heroContent.paragraph2}
-          </p>
+
+          <motion.p
+            variants={slideIn("up", "tween", 0.3, 0.75)}
+            className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          >
+            Aspiring front-end developer with experience building and deploying
+            full‑stack projects. Comfortable working with React, modern
+            JavaScript, and Tailwind. I focus on delivering accessible,
+            performant, and maintainable user interfaces. Seeking an entry‑level
+            front‑end role where I can contribute to real products and continue
+            growing my skills.
+          </motion.p>
         </div>
       </div>
+
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:h-[830px] lg:h-[740px] md:h-[630px]  max-sm:hidden"
@@ -35,12 +43,10 @@ const Hero = () => {
       </motion.div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about" aria-label="about">
+        <a href="#about" aria-label="about" className="flex items-center gap-3">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
+              animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
@@ -49,6 +55,9 @@ const Hero = () => {
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
           </div>
+          <span className="sm:inline-block text-secondary text-sm select-none ml-2">
+            Click to swipe
+          </span>
         </a>
       </div>
     </section>

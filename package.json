@@ -15,6 +15,7 @@
     "@react-three/fiber": "^8.17.9",
     "axios": "^1.7.7",
     "framer-motion": "^11.11.0",
+    "lucide-react": "^0.541.0",
     "maath": "^0.10.8",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
