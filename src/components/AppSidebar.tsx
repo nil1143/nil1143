@@ -1,4 +1,10 @@
-import { Home, CodeXml, Briefcase, ChevronDown, PanelLeftIcon } from "lucide-react";
+import {
+  Home,
+  CodeXml,
+  Briefcase,
+  ChevronDown,
+  PanelLeftIcon,
+} from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -21,7 +27,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "./ui/collapsible";
-import { Button } from "./ui/button";
+
 const items = [
   {
     title: "Home",
@@ -35,9 +41,8 @@ const items = [
   },
 ];
 const AppSidebar = () => {
-
   return (
-    <Sidebar>
+    <Sidebar collapsible="icon">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
@@ -47,7 +52,6 @@ const AppSidebar = () => {
               {/* </Link> */}
               <span className="ml-2">Tom Nil</span>
             </SidebarMenuButton>
-            
           </SidebarMenuItem>
         </SidebarMenu>
         <SidebarSeparator />
@@ -76,15 +80,17 @@ const AppSidebar = () => {
           <SidebarGroupLabel>Projects</SidebarGroupLabel>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton>
-                <CodeXml />
-                All Projects
-              </SidebarMenuButton>
+              <Link href="/projects">
+                <SidebarMenuButton>
+                  <CodeXml />
+                  <span>All Projects</span>
+                </SidebarMenuButton>
+              </Link>
             </SidebarMenuItem>
           </SidebarMenu>
 
           {/* Collapsible  Full Stack*/}
-          <Collapsible  className="group/collapsible">
+          <Collapsible className="group/collapsible">
             <SidebarGroup>
               <SidebarGroupLabel asChild>
                 <CollapsibleTrigger>

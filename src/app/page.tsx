@@ -1,8 +1,11 @@
+import HomeSection from "@/components/HomeSection";
 
 export default function Home() {
   return (
     <>
-    <div className="">Home</div>
+    <div className="">
+      <HomeSection />
+    </div>
     </>
   );
 }
