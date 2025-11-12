@@ -8,26 +8,26 @@ import { fadeIn, textVariant } from "../utils/motion";
 const HomeSection = () => {
   return (
     <section className="relative h-screen overflow-hidden">
-      <Boxes className="absolute inset-0 " />
+      <Boxes className="absolute inset-0 opacity-70" />
 
-      <div className="flex flex-col">
+      <div className="flex flex-col z-20">
         <motion.div
           variants={textVariant(0.1)}
           initial="hidden"
           animate="show"
-          className="relative top-5 px-6 w-[30%]"
+          className="relative top-5 px-6 w-[25%]"
         >
           <p className="sm:text-[18px] text-[14px]  uppercase tracking-wider">Introduction</p>
-          <h2 className="sm:text-[45px] text-[30px] font-thin tracking-widest">
+          <h2 className="sm:text-[45px] text-[30px] font-extralight tracking-widest">
             Overview
           </h2>
         </motion.div>
 
         <motion.div
-          variants={fadeIn("up", "spring", 0.1, 0.6)}
+          variants={fadeIn("up", "spring", 0.4, 0.8)}
           initial="hidden"
           animate="show"
-          className="relative z-20  inset-0 top-[30px] left-[25px] w-[80%] flex flex-row items-end justify-center  mx-6 gap-8"
+          className="flex flex-row w-fit p-3 mx-8 my-12 gap-8 bg-background/80 backdrop-blur-md rounded-4xl border border-border/50 items-center"
         >
           {/* <div className="relative z-20  inset-0 top-[30px] left-[20px] w-[80%] flex flex-row items-end justify-end  mx-6 gap-8"> */}
           <div className="flex flex-col justify-center items-center mt-5">
@@ -35,7 +35,7 @@ const HomeSection = () => {
             <div className="w-1 sm:h-60 h-120 violet-gradient" />
           </div>
 
-          <div className="flex flex-col w-auto bg-accent-foreground/40 rounded-4xl p-2">
+          <div className="flex flex-col w-auto ">
             <p className="lg:text-[56px]  text-[30px] font-light tracking-wider">
               Hi, I'm <span className="text-[#915eff]">Tom</span>
             </p>

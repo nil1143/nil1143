@@ -1,9 +1,11 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import {
   Home,
   CodeXml,
   Briefcase,
   ChevronDown,
-  PanelLeftIcon,
 } from "lucide-react";
 import {
   Sidebar,
@@ -36,20 +38,35 @@ const items = [
   },
   {
     title: "Work Experience",
-    url: "#",
+    url: "/experience",
     icon: Briefcase,
   },
 ];
+
 const AppSidebar = () => {
+  const pathname = usePathname();
+
+  // Check if any project is active
+  const isFullStackOpen = [
+    "/projects/streamify",
+    "/projects/job-search",
+    "/projects/evently",
+  ].some((path) => pathname === path);
+
+  const isUIProjectsOpen = [
+    "/projects/nilai",
+    "/projects/admin-dashboard",
+  ].some((path) => pathname === path);
+
+  const isGamesOpen = pathname === "/projects/super-mario";
+
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton>
-              {/* <Link href="/"> */}
               <Image src="/logo.png" alt="logo" width={20} height={20} />
-              {/* </Link> */}
               <span className="ml-2">Tom Nil</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -63,7 +80,7 @@ const AppSidebar = () => {
             <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton asChild isActive={pathname === item.url}>
                     <Link href={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
@@ -80,17 +97,17 @@ const AppSidebar = () => {
           <SidebarGroupLabel>Projects</SidebarGroupLabel>
           <SidebarMenu>
             <SidebarMenuItem>
-              <Link href="/projects">
-                <SidebarMenuButton>
+              <SidebarMenuButton asChild isActive={pathname === "/projects"}>
+                <Link href="/projects">
                   <CodeXml />
                   <span>All Projects</span>
-                </SidebarMenuButton>
-              </Link>
+                </Link>
+              </SidebarMenuButton>
             </SidebarMenuItem>
           </SidebarMenu>
 
-          {/* Collapsible  Full Stack*/}
-          <Collapsible className="group/collapsible">
+          {/* Collapsible Full Stack*/}
+          <Collapsible defaultOpen={isFullStackOpen} className="group/collapsible">
             <SidebarGroup>
               <SidebarGroupLabel asChild>
                 <CollapsibleTrigger>
@@ -101,25 +118,22 @@ const AppSidebar = () => {
               <CollapsibleContent>
                 <SidebarMenuSub>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <Link href="/#">
-                        {/* <Plus /> */}
+                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/streamify"}>
+                      <Link href="/projects/streamify">
                         Streamify Chat App
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <Link href="/#">
-                        {/* <Plus /> */}
+                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/job-search"}>
+                      <Link href="/projects/job-search">
                         Job Search App
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <Link href="/#">
-                        {/* <Plus /> */}
+                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/evently"}>
+                      <Link href="/projects/evently">
                         Evently App
                       </Link>
                     </SidebarMenuSubButton>
@@ -130,7 +144,7 @@ const AppSidebar = () => {
           </Collapsible>
 
           {/* Collapsible Frontend UI*/}
-          <Collapsible className="group/collapsible">
+          <Collapsible defaultOpen={isUIProjectsOpen} className="group/collapsible">
             <SidebarGroup>
               <SidebarGroupLabel asChild>
                 <CollapsibleTrigger>
@@ -141,18 +155,16 @@ const AppSidebar = () => {
               <CollapsibleContent>
                 <SidebarMenuSub>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <Link href="/#">
-                        {/* <Plus /> */}
+                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/nilai"}>
+                      <Link href="/projects/nilai">
                         nilAI UI App
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <Link href="/#">
-                        {/* <Plus /> */}
-                        Admin Dashboard App
+                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/admin-dashboard"}>
+                      <Link href="/projects/admin-dashboard">
+                        Admin Dashboard
                       </Link>
                     </SidebarMenuSubButton>
                   </SidebarMenuSubItem>
@@ -161,8 +173,8 @@ const AppSidebar = () => {
             </SidebarGroup>
           </Collapsible>
 
-          {/* Collapsible Frontend UI*/}
-          <Collapsible className="group/collapsible">
+          {/* Collapsible Games*/}
+          <Collapsible defaultOpen={isGamesOpen} className="group/collapsible">
             <SidebarGroup>
               <SidebarGroupLabel asChild>
                 <CollapsibleTrigger>
@@ -173,9 +185,8 @@ const AppSidebar = () => {
               <CollapsibleContent>
                 <SidebarMenuSub>
                   <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild>
-                      <Link href="/#">
-                        {/* <Plus /> */}
+                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/super-mario"}>
+                      <Link href="/projects/super-mario">
                         Super Mario JS
                       </Link>
                     </SidebarMenuSubButton>

@@ -10,12 +10,17 @@ const Navbar = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <nav className="p-4 flex items-center justify-between sticky top-0 bg-background z-10">
+    <nav className="p-4 flex items-center justify-between sticky top-0 bg-background z-10 px-5">
       <div className="flex space-x-4">
         <Button variant="outline" size="icon" onClick={toggleSidebar}>
           <PanelLeftIcon />
         </Button>
           <ModeSwitcher />
+      </div>
+
+      <div className="flex space-x-4">
+        <p>LinkedIn</p>
+        <p>GitHub</p>
       </div>
     </nav>
   );

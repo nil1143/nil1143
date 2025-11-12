@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
 @custom-variant dark (&:is(.dark *));
+
 :root {
   --background: oklch(0.9578 0.0058 264.5321);
   --foreground: oklch(0.4355 0.0430 279.3250);
@@ -35,9 +39,9 @@
   --sidebar-accent-foreground: oklch(1.0000 0 0);
   --sidebar-border: oklch(0.8083 0.0174 271.1982);
   --sidebar-ring: oklch(0.5547 0.2503 297.0156);
-  --font-sans: Montserrat, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: Fira Code, monospace;
+  --font-sans: Poppins, ui-sans-serif, sans-serif, system-ui;
+  --font-serif: Lora, serif;
+  --font-mono: Lekton, ui-monospace, monospace;
   --radius: 0.35rem;
   --shadow-x: 0px;
   --shadow-y: 4px;
@@ -90,9 +94,9 @@
   --sidebar-accent-foreground: oklch(0.2429 0.0304 283.9110);
   --sidebar-border: oklch(0.4037 0.0320 280.1520);
   --sidebar-ring: oklch(0.7871 0.1187 304.7693);
-  --font-sans: Montserrat, sans-serif;
-  --font-serif: Georgia, serif;
-  --font-mono: Fira Code, monospace;
+  --font-sans: Poppins, ui-sans-serif, sans-serif, system-ui;
+  --font-serif: Lora, serif;
+  --font-mono: Lekton, ui-monospace, monospace;
   --radius: 0.35rem;
   --shadow-x: 0px;
   --shadow-y: 4px;
