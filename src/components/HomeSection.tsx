@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const HomeSection = () => {
   return (
     <section className="relative h-screen overflow-hidden">
-      <Boxes className="absolute inset-0 opacity-70" />
+      <Boxes className="absolute inset-0" />
 
       <div className="flex flex-col z-20">
         <motion.div
@@ -17,7 +17,9 @@ const HomeSection = () => {
           animate="show"
           className="relative top-5 px-6 w-[25%]"
         >
-          <p className="sm:text-[18px] text-[14px]  uppercase tracking-wider">Introduction</p>
+          <p className="sm:text-[18px] text-[14px]  uppercase tracking-wider">
+            Introduction
+          </p>
           <h2 className="sm:text-[45px] text-[30px] font-extralight tracking-widest">
             Overview
           </h2>
@@ -27,7 +29,7 @@ const HomeSection = () => {
           variants={fadeIn("up", "spring", 0.4, 0.8)}
           initial="hidden"
           animate="show"
-          className="flex flex-row w-fit p-3 mx-8 my-12 gap-8 bg-background/80 backdrop-blur-md rounded-4xl border border-border/50 items-center"
+          className="flex flex-row w-fit p-3 mx-8 my-12 gap-8 bg-background/50 backdrop-blur-xs rounded-4xl border border-border/50 items-center"
         >
           {/* <div className="relative z-20  inset-0 top-[30px] left-[20px] w-[80%] flex flex-row items-end justify-end  mx-6 gap-8"> */}
           <div className="flex flex-col justify-center items-center mt-5">

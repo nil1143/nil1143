@@ -5,11 +5,12 @@ import { textVariant } from "@/utils/motion";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import { experiences } from "@/constants";
 import ExperienceCard from "./ExperienceCard";
+import { BackgroundBeams } from "./ui/shadcn-io/background-beams";
 
 const ExperienceSection = () => {
   return (
     <section className="relative overflow-hidden">
-        
+         <BackgroundBeams className="absolute inset-0" />
       {/* Content */}
       <div className="relative ">
         <motion.div

@@ -29,6 +29,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "./ui/collapsible";
+import { projects, getProjectsByCategory } from "@/constants";
 
 const items = [
   {
@@ -46,19 +47,21 @@ const items = [
 const AppSidebar = () => {
   const pathname = usePathname();
 
-  // Check if any project is active
-  const isFullStackOpen = [
-    "/projects/streamify",
-    "/projects/job-search",
-    "/projects/evently",
-  ].some((path) => pathname === path);
+  // Get projects by category
+  const fullStackProjects = getProjectsByCategory("full-stack");
+  const uiProjects = getProjectsByCategory("ui");
+  const gameProjects = getProjectsByCategory("games");
 
-  const isUIProjectsOpen = [
-    "/projects/nilai",
-    "/projects/admin-dashboard",
-  ].some((path) => pathname === path);
-
-  const isGamesOpen = pathname === "/projects/super-mario";
+  // Check if any project in category is active
+  const isFullStackOpen = fullStackProjects.some(
+    (project) => pathname === `/projects/${project.slug}`
+  );
+  const isUIProjectsOpen = uiProjects.some(
+    (project) => pathname === `/projects/${project.slug}`
+  );
+  const isGamesOpen = gameProjects.some(
+    (project) => pathname === `/projects/${project.slug}`
+  );
 
   return (
     <Sidebar collapsible="icon">
@@ -67,7 +70,7 @@ const AppSidebar = () => {
           <SidebarMenuItem>
             <SidebarMenuButton>
               <Image src="/logo.png" alt="logo" width={20} height={20} />
-              <span className="ml-2">Tom Nil</span>
+              <span className="ml-2">Tom&apos;s Portfolio</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -106,95 +109,95 @@ const AppSidebar = () => {
             </SidebarMenuItem>
           </SidebarMenu>
 
-          {/* Collapsible Full Stack*/}
-          <Collapsible defaultOpen={isFullStackOpen} className="group/collapsible">
-            <SidebarGroup>
-              <SidebarGroupLabel asChild>
-                <CollapsibleTrigger>
-                  Full Stack Projects
-                  <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                </CollapsibleTrigger>
-              </SidebarGroupLabel>
-              <CollapsibleContent>
-                <SidebarMenuSub>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/streamify"}>
-                      <Link href="/projects/streamify">
-                        Streamify Chat App
-                      </Link>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/job-search"}>
-                      <Link href="/projects/job-search">
-                        Job Search App
-                      </Link>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/evently"}>
-                      <Link href="/projects/evently">
-                        Evently App
-                      </Link>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                </SidebarMenuSub>
-              </CollapsibleContent>
-            </SidebarGroup>
-          </Collapsible>
+          {/* Collapsible Full Stack */}
+          {fullStackProjects.length > 0 && (
+            <Collapsible defaultOpen={isFullStackOpen} className="group/collapsible">
+              <SidebarGroup>
+                <SidebarGroupLabel asChild>
+                  <CollapsibleTrigger>
+                    Full Stack Projects
+                    <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                  </CollapsibleTrigger>
+                </SidebarGroupLabel>
+                <CollapsibleContent>
+                  <SidebarMenuSub>
+                    {fullStackProjects.map((project) => (
+                      <SidebarMenuSubItem key={project.slug}>
+                        <SidebarMenuSubButton
+                          asChild
+                          isActive={pathname === `/projects/${project.slug}`}
+                        >
+                          <Link href={`/projects/${project.slug}`} className="text-xs">
+                            {project.name}
+                          </Link>
+                        </SidebarMenuSubButton>
+                      </SidebarMenuSubItem>
+                    ))}
+                  </SidebarMenuSub>
+                </CollapsibleContent>
+              </SidebarGroup>
+            </Collapsible>
+          )}
 
-          {/* Collapsible Frontend UI*/}
-          <Collapsible defaultOpen={isUIProjectsOpen} className="group/collapsible">
-            <SidebarGroup>
-              <SidebarGroupLabel asChild>
-                <CollapsibleTrigger>
-                  UI Projects
-                  <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                </CollapsibleTrigger>
-              </SidebarGroupLabel>
-              <CollapsibleContent>
-                <SidebarMenuSub>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/nilai"}>
-                      <Link href="/projects/nilai">
-                        nilAI UI App
-                      </Link>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/admin-dashboard"}>
-                      <Link href="/projects/admin-dashboard">
-                        Admin Dashboard
-                      </Link>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                </SidebarMenuSub>
-              </CollapsibleContent>
-            </SidebarGroup>
-          </Collapsible>
+          {/* Collapsible UI Projects */}
+          {uiProjects.length > 0 && (
+            <Collapsible defaultOpen={isUIProjectsOpen} className="group/collapsible">
+              <SidebarGroup>
+                <SidebarGroupLabel asChild>
+                  <CollapsibleTrigger>
+                    UI Projects
+                    <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                  </CollapsibleTrigger>
+                </SidebarGroupLabel>
+                <CollapsibleContent>
+                  <SidebarMenuSub>
+                    {uiProjects.map((project) => (
+                      <SidebarMenuSubItem key={project.slug}>
+                        <SidebarMenuSubButton
+                          asChild
+                          isActive={pathname === `/projects/${project.slug}`}
+                        >
+                          <Link href={`/projects/${project.slug}`} className="text-xs">
+                            {project.name}
+                          </Link>
+                        </SidebarMenuSubButton>
+                      </SidebarMenuSubItem>
+                    ))}
+                  </SidebarMenuSub>
+                </CollapsibleContent>
+              </SidebarGroup>
+            </Collapsible>
+          )}
 
-          {/* Collapsible Games*/}
-          <Collapsible defaultOpen={isGamesOpen} className="group/collapsible">
-            <SidebarGroup>
-              <SidebarGroupLabel asChild>
-                <CollapsibleTrigger>
-                  Games
-                  <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
-                </CollapsibleTrigger>
-              </SidebarGroupLabel>
-              <CollapsibleContent>
-                <SidebarMenuSub>
-                  <SidebarMenuSubItem>
-                    <SidebarMenuSubButton asChild isActive={pathname === "/projects/super-mario"}>
-                      <Link href="/projects/super-mario">
-                        Super Mario JS
-                      </Link>
-                    </SidebarMenuSubButton>
-                  </SidebarMenuSubItem>
-                </SidebarMenuSub>
-              </CollapsibleContent>
-            </SidebarGroup>
-          </Collapsible>
+          {/* Collapsible Games */}
+          {gameProjects.length > 0 && (
+            <Collapsible defaultOpen={isGamesOpen} className="group/collapsible">
+              <SidebarGroup>
+                <SidebarGroupLabel asChild>
+                  <CollapsibleTrigger>
+                    Games
+                    <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
+                  </CollapsibleTrigger>
+                </SidebarGroupLabel>
+                <CollapsibleContent>
+                  <SidebarMenuSub>
+                    {gameProjects.map((project) => (
+                      <SidebarMenuSubItem key={project.slug}>
+                        <SidebarMenuSubButton
+                          asChild
+                          isActive={pathname === `/projects/${project.slug}`}
+                        >
+                          <Link href={`/projects/${project.slug}`} className="text-xs">
+                            {project.name}
+                          </Link>
+                        </SidebarMenuSubButton>
+                      </SidebarMenuSubItem>
+                    ))}
+                  </SidebarMenuSub>
+                </CollapsibleContent>
+              </SidebarGroup>
+            </Collapsible>
+          )}
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>

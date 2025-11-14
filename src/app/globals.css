@@ -165,6 +165,7 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
+  --animate-spin: spin 2s linear infinite;
 }
 
 @layer base {
