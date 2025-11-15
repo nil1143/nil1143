@@ -19,7 +19,7 @@ export const technologies = {
   nextjs: { icon: SiNextdotjs, name: "Next.js", color: "#000000" },
   tailwind: { icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
   mongodb: { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
-  prisma: { icon: SiPrisma, name: "Prisma", color: "#2D3748" },
+  prisma: { icon: SiPrisma, name: "Prisma", color: "#23282f" },
   stripe: { icon: SiStripe, name: "Stripe", color: "#635BFF" },
   express: { icon: SiExpress, name: "Express", color: "#000000" },
   html5: { icon: SiHtml5, name: "HTML5", color: "#E34F26" },
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     description:
       "MERN stack React app with a production-ready backend. Frontend focuses on discovering friend-request flow, real-time chat, theming, and responsive UI.",
     technologies: [
-      technologies.javascript,  // ← Use the object, not just SiJavascript
+      technologies.javascript,
       technologies.react,
       technologies.nextjs,
       technologies.mongodb,
@@ -107,6 +107,41 @@ export const projects: Project[] = [
     source_code_link: "https://github.com/nil1143/streamify",
     live_link: "https://streamify-bmad.onrender.com",
     category: "full-stack",
+    features: [
+      {
+        title: "Real-time Chat",
+        description: "WebSocket-powered instant messaging with typing indicators and read receipts"
+      },
+      {
+        title: "Friend Discovery",
+        description: "Search and connect with users through friend request system"
+      },
+      {
+        title: "Theme Customization",
+        description: "Light/dark mode with persistent user preferences"
+      },
+      {
+        title: "Responsive Design",
+        description: "Fully responsive across all devices with mobile-first approach"
+      }
+    ],
+    highlights: [
+      {
+        title: "Real-time Communication",
+        description: "Implemented Socket.io for instant messaging and live presence updates",
+        color: "blue"
+      },
+      {
+        title: "State Management",
+        description: "Redux for complex chat state, friend lists, and notification handling",
+        color: "orange"
+      },
+      {
+        title: "MongoDB Integration",
+        description: "Efficient data modeling for users, messages, and relationships",
+        color: "purple"
+      }
+    ]
   },
   {
     slug: "job-search",
@@ -114,16 +149,51 @@ export const projects: Project[] = [
     description:
       "MERN application built with Next.js and TypeScript. Connects job seekers and employers with features for listings, profiles and secure workflows — hosted on Vercel.",
     technologies: [
-      technologies.typescript, 
-      technologies.nextjs, 
-      technologies.prisma, 
-      technologies.stripe, 
+      technologies.typescript,
+      technologies.nextjs,
+      technologies.prisma,
+      technologies.stripe,
       technologies.tailwind,
     ],
     image: "/project-img-jobsearch.png",
     source_code_link: "https://github.com/nil1143/job-search",
     live_link: "https://job-search-roan.vercel.app",
     category: "full-stack",
+    features: [
+      {
+        title: "Job Listings Management",
+        description: "Create, edit, and manage job postings with rich text descriptions"
+      },
+      {
+        title: "Applicant Tracking",
+        description: "Track applications, review candidates, and manage hiring pipeline"
+      },
+      {
+        title: "Stripe Integration",
+        description: "Premium job listings and subscription-based employer features"
+      },
+      {
+        title: "Advanced Search",
+        description: "Filter jobs by location, salary, type, and experience level"
+      }
+    ],
+    highlights: [
+      {
+        title: "TypeScript & Type Safety",
+        description: "Full type coverage with Prisma ORM for database type generation",
+        color: "blue"
+      },
+      {
+        title: "Payment Processing",
+        description: "Integrated Stripe webhooks for subscription management and payments",
+        color: "purple"
+      },
+      {
+        title: "Authentication & Authorization",
+        description: "Role-based access control for job seekers and employers",
+        color: "orange"
+      }
+    ]
   },
   {
     slug: "evently",
@@ -131,16 +201,51 @@ export const projects: Project[] = [
     description:
       "Evently is a full-stack event management application built using the MERN stack and Next.js framework.",
     technologies: [
-      technologies.typescript, 
-      technologies.nextjs, 
-      technologies.mongodb, 
-      technologies.stripe, 
+      technologies.typescript,
+      technologies.nextjs,
+      technologies.mongodb,
+      technologies.stripe,
       technologies.tailwind,
     ],
     image: "/project-img-event.png",
     source_code_link: "https://github.com/nil1143/event-mern",
     live_link: "https://event-mern-nine.vercel.app/",
     category: "full-stack",
+    features: [
+      {
+        title: "Event Creation",
+        description: "Create and manage events with custom details, pricing, and capacity"
+      },
+      {
+        title: "Ticket Booking",
+        description: "Secure ticket purchasing with Stripe payment integration"
+      },
+      {
+        title: "Event Discovery",
+        description: "Browse and search events by category, date, and location"
+      },
+      {
+        title: "User Dashboard",
+        description: "Manage created events and view purchased tickets in one place"
+      }
+    ],
+    highlights: [
+      {
+        title: "Payment Integration",
+        description: "Stripe Checkout for secure ticket purchases and refunds",
+        color: "purple"
+      },
+      {
+        title: "Image Upload",
+        description: "Cloudinary integration for event image management and optimization",
+        color: "blue"
+      },
+      {
+        title: "Server Actions",
+        description: "Next.js 14 Server Actions for type-safe mutations and data fetching",
+        color: "orange"
+      }
+    ]
   },
   {
     slug: "nilai",
@@ -148,37 +253,50 @@ export const projects: Project[] = [
     description:
       "Modern React landing page for a SaaS product — UI‑only, responsive and production‑ready with polished components.",
     technologies: [
-      technologies.react, 
-      technologies.tailwind, 
+      technologies.react,
+      technologies.tailwind,
       technologies.express,
     ],
     image: "/project-img-nilai2.png",
     source_code_link: "https://github.com/nil1143/saas_landing_stripe",
     live_link: "https://saas-landing-pi.vercel.app/",
     category: "ui",
+    features: [
+      {
+        title: "Modern UI Design",
+        description: "Clean, professional interface with smooth animations"
+      },
+      {
+        title: "Responsive Layout",
+        description: "Mobile-first design that works on all screen sizes"
+      },
+      {
+        title: "Interactive Components",
+        description: "Engaging CTAs, accordions, and testimonial sections"
+      },
+      {
+        title: "Performance Optimized",
+        description: "Fast load times with optimized assets and lazy loading"
+      }
+    ],
+    highlights: [
+      {
+        title: "Component Architecture",
+        description: "Reusable React components with clean separation of concerns",
+        color: "blue"
+      },
+      {
+        title: "Tailwind Mastery",
+        description: "Advanced Tailwind patterns including custom animations and gradients",
+        color: "purple"
+      },
+      {
+        title: "Deployment Ready",
+        description: "Production-optimized build with Vercel deployment configuration",
+        color: "orange"
+      }
+    ]
   },
-  // {
-  //   slug: "admin-dashboard",
-  //   name: "Admin Dashboard App",
-  //   description:
-  //     "Admin dashboard with data visualization and management features.",
-  //   technologies: [SiReact, SiTailwindcss, SiTypescript],
-  //   image: project_nilai, // Replace with actual image
-  //   source_code_link: "https://github.com/nil1143/admin-dashboard",
-  //   live_link: "#",
-  //   category: "ui",
-  // },
-  // {
-  //   slug: "super-mario",
-  //   name: "Super Mario JS",
-  //   description:
-  //     "Classic Super Mario game built with vanilla JavaScript and HTML5 Canvas.",
-  //   technologies: [SiJavascript, SiHtml5],
-  //   image: project_nilai, // Replace with actual image
-  //   source_code_link: "https://github.com/nil1143/super-mario",
-  //   live_link: "#",
-  //   category: "game",
-  // },
 ];
 
 // Helper functions

@@ -6,13 +6,26 @@ export interface Technology {
   color: string;
 }
 
+export interface Feature {
+  title: string;
+  description: string;
+}
+
+export interface Highlight {
+  title: string;
+  description: string;
+  color: "orange" | "blue" | "purple" | "green" | "red";
+}
+
 export interface Project {
   slug: string;
   name: string;
   description: string;
   technologies: Technology[];
-  image: string;  // Changed from StaticImageData to string
+  image: string;
   source_code_link: string;
   live_link: string;
   category: "full-stack" | "ui" | "games";
+  features: Feature[];
+  highlights: Highlight[];
 }
