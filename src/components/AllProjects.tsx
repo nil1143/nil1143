@@ -3,8 +3,10 @@ import { fadeIn, textVariant } from "@/utils/motion";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { projects, getProjectsByCategory } from "@/constants";
+import { getProjectsByCategory } from "@/constants";
 import { ProjectCard } from "@/components/ProjectCard";
+import { DotPattern } from "@/components/ui/dot-pattern";
+import { cn } from "@/lib/utils";
 
 const AllProjects = () => {
   const [activeTab, setActiveTab] = useState("full-stack");
@@ -15,12 +17,19 @@ const AllProjects = () => {
 
   return (
     <section className="relative overflow-hidden min-h-screen pb-8">
-      <div className="container mx-auto px-4">
+      <DotPattern
+        className={cn(
+          "[mask-image:radial-gradient(700px_circle_at_center,white,transparent)]",
+          "dark:opacity-50 opacity-30"
+        )}
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           variants={textVariant(0.1)}
           initial="hidden"
           animate="show"
-          className="relative top-5 px-6 w-full max-w-4xl"
+          className="relative top-5 px-6"
         >
           <p className="sm:text-[18px] text-[14px] uppercase tracking-wider">
             My Work

@@ -12,7 +12,7 @@ const ExperienceSection = () => {
     <section className="relative overflow-hidden">
          <BackgroundBeams className="absolute inset-0" />
       {/* Content */}
-      <div className="relative ">
+      <div className="container mx-auto px-4 ">
         <motion.div
           variants={textVariant(0.1)}
           initial="hidden"

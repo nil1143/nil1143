@@ -7,10 +7,10 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const HomeSection = () => {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       <Boxes className="absolute inset-0" />
 
-      <div className="flex flex-col z-20">
+      <div className="flex flex-col z-20 px-4 mx-auto">
         <motion.div
           variants={textVariant(0.1)}
           initial="hidden"
