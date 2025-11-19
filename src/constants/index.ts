@@ -1,14 +1,16 @@
-import { 
-  SiJavascript, 
-  SiTypescript, 
-  SiReact, 
-  SiNextdotjs, 
-  SiTailwindcss, 
-  SiMongodb, 
-  SiPrisma, 
-  SiStripe, 
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiMongodb,
+  SiPrisma,
+  SiStripe,
   SiExpress,
   SiHtml5,
+  SiNodedotjs,
+  SiVite,
 } from "react-icons/si";
 
 // Define technologies with their colors FIRST
@@ -17,18 +19,16 @@ export const technologies = {
   typescript: { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
   react: { icon: SiReact, name: "React", color: "#61DAFB" },
   nextjs: { icon: SiNextdotjs, name: "Next.js", color: "#000000" },
+  nodejs: { icon: SiNodedotjs, name: "Node.js", color: "#339933" },
   tailwind: { icon: SiTailwindcss, name: "Tailwind CSS", color: "#06B6D4" },
   mongodb: { icon: SiMongodb, name: "MongoDB", color: "#47A248" },
   prisma: { icon: SiPrisma, name: "Prisma", color: "#23282f" },
   stripe: { icon: SiStripe, name: "Stripe", color: "#635BFF" },
   express: { icon: SiExpress, name: "Express", color: "#000000" },
+  vite: { icon: SiVite, name: "Vite", color: "#646CFF" },
   html5: { icon: SiHtml5, name: "HTML5", color: "#E34F26" },
 };
 
-// import project_chat from "@/public/project-chat.png";
-// import project_jobsearch from "@/public/project-img-jobsearch.png";
-// import project_event from "@/public/project-img-event.png";
-// import project_nilai from "@/public/project-img-nilai.png";
 import type { Experience } from "@/types/experience";
 import type { Project } from "@/types/project";
 
@@ -89,7 +89,6 @@ export const experiences: Experience[] = [
   },
 ];
 
-
 export const projects: Project[] = [
   {
     slug: "streamify",
@@ -99,49 +98,66 @@ export const projects: Project[] = [
     technologies: [
       technologies.javascript,
       technologies.react,
-      technologies.nextjs,
+      technologies.vite, // Add - mentioned in description: "React + Vite"
+      technologies.nodejs, // Add - MERN stack = Node.js backend
+      technologies.express, // Add - Express backend
       technologies.mongodb,
       technologies.tailwind,
     ],
     image: "/project-chat.png",
+    images: [
+      "/project-chat.png",
+    ],
     source_code_link: "https://github.com/nil1143/streamify",
     live_link: "https://streamify-bmad.onrender.com",
     category: "full-stack",
     features: [
       {
-        title: "Real-time Chat",
-        description: "WebSocket-powered instant messaging with typing indicators and read receipts"
+        title: "Real-time Messaging",
+        description:
+          "Instant chat with language partners using Stream Chat SDK with message persistence",
       },
       {
-        title: "Friend Discovery",
-        description: "Search and connect with users through friend request system"
+        title: "Friend Discovery System",
+        description:
+          "Browse and connect with language partners through smart friend request workflow",
       },
       {
-        title: "Theme Customization",
-        description: "Light/dark mode with persistent user preferences"
+        title: "Video Calling",
+        description:
+          "Built-in video calls powered by Stream Video SDK with shareable call links",
       },
       {
-        title: "Responsive Design",
-        description: "Fully responsive across all devices with mobile-first approach"
-      }
+        title: "Profile Customization",
+        description:
+          "Complete onboarding with language preferences, location, and bio setup",
+      },
+      {
+        title: "Theme Switcher",
+        description:
+          "31 DaisyUI themes with localStorage persistence for personalized experience",
+      },
     ],
     highlights: [
       {
-        title: "Real-time Communication",
-        description: "Implemented Socket.io for instant messaging and live presence updates",
-        color: "blue"
+        title: "React Query Integration",
+        description:
+          "Efficient server state management with caching and automatic refetching for smooth UX",
+        color: "blue",
       },
       {
-        title: "State Management",
-        description: "Redux for complex chat state, friend lists, and notification handling",
-        color: "orange"
+        title: "Responsive Design",
+        description:
+          "Mobile-first approach with Tailwind CSS and conditional sidebar rendering for all screen sizes",
+        color: "purple",
       },
       {
-        title: "MongoDB Integration",
-        description: "Efficient data modeling for users, messages, and relationships",
-        color: "purple"
-      }
-    ]
+        title: "Authentication Flow",
+        description:
+          "Secure JWT-based auth with HTTP-only cookies and protected routes using custom hooks",
+        color: "orange",
+      },
+    ],
   },
   {
     slug: "job-search",
@@ -151,49 +167,65 @@ export const projects: Project[] = [
     technologies: [
       technologies.typescript,
       technologies.nextjs,
+      technologies.nodejs, 
       technologies.prisma,
       technologies.stripe,
       technologies.tailwind,
     ],
     image: "/project-img-jobsearch.png",
+    images: [
+      "/project-img-jobsearch.png",
+    ],
     source_code_link: "https://github.com/nil1143/job-search",
     live_link: "https://job-search-roan.vercel.app",
     category: "full-stack",
     features: [
       {
-        title: "Job Listings Management",
-        description: "Create, edit, and manage job postings with rich text descriptions"
+        title: "Advanced Job Search",
+        description:
+          "Filter jobs by type, location, and salary with URL-based state persistence",
       },
       {
-        title: "Applicant Tracking",
-        description: "Track applications, review candidates, and manage hiring pipeline"
+        title: "Dual User Roles",
+        description:
+          "Separate onboarding flows for job seekers and employers with role-based dashboards",
       },
       {
-        title: "Stripe Integration",
-        description: "Premium job listings and subscription-based employer features"
+        title: "Stripe Payment Integration",
+        description:
+          "Tiered pricing for job listings (7, 14, 30 days) with secure checkout flow",
       },
       {
-        title: "Advanced Search",
-        description: "Filter jobs by location, salary, type, and experience level"
-      }
+        title: "Job Management",
+        description:
+          "Create, edit, and manage job postings with draft-to-active status workflow",
+      },
+      {
+        title: "Saved Jobs",
+        description:
+          "Bookmark favorite listings with instant UI updates and persistence",
+      },
     ],
     highlights: [
       {
-        title: "TypeScript & Type Safety",
-        description: "Full type coverage with Prisma ORM for database type generation",
-        color: "blue"
+        title: "Next.js 15 Server Actions",
+        description:
+          "Type-safe server mutations with Zod validation and optimistic UI updates",
+        color: "blue",
       },
       {
-        title: "Payment Processing",
-        description: "Integrated Stripe webhooks for subscription management and payments",
-        color: "purple"
+        title: "URL-Based State Management",
+        description:
+          "Search filters persist via URL params with seamless client-side navigation",
+        color: "purple",
       },
       {
-        title: "Authentication & Authorization",
-        description: "Role-based access control for job seekers and employers",
-        color: "orange"
-      }
-    ]
+        title: "OAuth Authentication",
+        description:
+          "NextAuth.js integration with GitHub/Google providers and protected routes",
+        color: "orange",
+      },
+    ],
   },
   {
     slug: "evently",
@@ -208,91 +240,114 @@ export const projects: Project[] = [
       technologies.tailwind,
     ],
     image: "/project-img-event.png",
+    images: [
+      "/project-img-event.png",
+    ],
     source_code_link: "https://github.com/nil1143/event-mern",
     live_link: "https://event-mern-nine.vercel.app/",
     category: "full-stack",
     features: [
       {
         title: "Event Creation",
-        description: "Create and manage events with custom details, pricing, and capacity"
+        description:
+          "Create and manage events with custom details, pricing, and capacity",
       },
       {
         title: "Ticket Booking",
-        description: "Secure ticket purchasing with Stripe payment integration"
+        description: "Secure ticket purchasing with Stripe payment integration",
       },
       {
         title: "Event Discovery",
-        description: "Browse and search events by category, date, and location"
+        description: "Browse and search events by category, date, and location",
       },
       {
         title: "User Dashboard",
-        description: "Manage created events and view purchased tickets in one place"
-      }
+        description:
+          "Manage created events and view purchased tickets in one place",
+      },
     ],
     highlights: [
       {
         title: "Payment Integration",
         description: "Stripe Checkout for secure ticket purchases and refunds",
-        color: "purple"
+        color: "purple",
       },
       {
         title: "Image Upload",
-        description: "Cloudinary integration for event image management and optimization",
-        color: "blue"
+        description:
+          "Cloudinary integration for event image management and optimization",
+        color: "blue",
       },
       {
         title: "Server Actions",
-        description: "Next.js 14 Server Actions for type-safe mutations and data fetching",
-        color: "orange"
-      }
-    ]
+        description:
+          "Next.js 14 Server Actions for type-safe mutations and data fetching",
+        color: "orange",
+      },
+    ],
   },
   {
     slug: "nilai",
     name: "nilAI",
     description:
-      "Modern React landing page for a SaaS product — UI‑only, responsive and production‑ready with polished components.",
+      "Single-page application showcasing a fictional AI video editing platform. Implements production-ready UI patterns including interactive pricing, smooth scroll navigation, and custom Tailwind design system with 91+ Lighthouse performance.",
     technologies: [
       technologies.react,
       technologies.tailwind,
-      technologies.express,
+      technologies.vite,
     ],
     image: "/project-img-nilai2.png",
+    images: [
+      "/screenshoots/nilai1.png",
+      "/screenshoots/nilai2.png",
+      "/screenshoots/nilai3.png",
+      "/screenshoots/nilai4.png",
+      "/screenshoots/nilai5.png",
+      "/screenshoots/nilai6.png",
+    ],
     source_code_link: "https://github.com/nil1143/saas_landing_stripe",
     live_link: "https://saas-landing-pi.vercel.app/",
     category: "ui",
+    
+    // FEATURES: What the project has (user-facing)
     features: [
       {
-        title: "Modern UI Design",
-        description: "Clean, professional interface with smooth animations"
+        title: "Component Architecture",
+        description: "Reusable button, accordion, and testimonial components with props-based customization"
       },
       {
-        title: "Responsive Layout",
-        description: "Mobile-first design that works on all screen sizes"
+        title: "Interactive Pricing",
+        description: "Monthly/annual toggle with animated price transitions using react-countup"
       },
       {
-        title: "Interactive Components",
-        description: "Engaging CTAs, accordions, and testimonial sections"
+        title: "Smooth Navigation",
+        description: "React-scroll integration with active link highlighting and offset-adjusted positioning"
+      },
+      {
+        title: "Custom Design System",
+        description: "Cohesive color palette, custom shadows, and typography scale for consistent branding"
       },
       {
         title: "Performance Optimized",
-        description: "Fast load times with optimized assets and lazy loading"
+        description: "Fast load times with lazy loading, code splitting, and optimized image assets"
       }
     ],
+    
+    // HIGHLIGHTS: How you built it (technical achievements)
     highlights: [
       {
-        title: "Component Architecture",
-        description: "Reusable React components with clean separation of concerns",
-        color: "blue"
-      },
-      {
-        title: "Tailwind Mastery",
-        description: "Advanced Tailwind patterns including custom animations and gradients",
+        title: "Tailwind CSS Mastery",
+        description: "Extended framework with 9 custom gradients, shadow utilities, and pseudo-element patterns via index.css",
         color: "purple"
       },
       {
-        title: "Deployment Ready",
-        description: "Production-optimized build with Vercel deployment configuration",
+        title: "React State Optimization",
+        description: "Implemented CountUp with preserveValue prop to prevent counter resets during parent re-renders",
+        color: "blue"
+      },
+      {
+        title: "Web Vitals Achievement",
+        description: "91+ performance and 100% accessibility Lighthouse scores through lazy loading and semantic HTML",
         color: "orange"
       }
     ]

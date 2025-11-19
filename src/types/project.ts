@@ -23,6 +23,7 @@ export interface Project {
   description: string;
   technologies: Technology[];
   image: string;
+  images?: string[];
   source_code_link: string;
   live_link: string;
   category: "full-stack" | "ui" | "games";

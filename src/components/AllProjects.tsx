@@ -7,13 +7,23 @@ import { getProjectsByCategory } from "@/constants";
 import { ProjectCard } from "@/components/ProjectCard";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+import { useSidebar } from "@/components/ui/sidebar"; // Add this import
 
 const AllProjects = () => {
   const [activeTab, setActiveTab] = useState("full-stack");
+  const { open } = useSidebar(); // Get sidebar state
 
   const fullStackProjects = getProjectsByCategory("full-stack");
   const uiProjects = getProjectsByCategory("ui");
   const gameProjects = getProjectsByCategory("games");
+
+  // Dynamic grid: 1 col when sidebar open on tablet, 2 cols when closed
+  const gridClasses = cn(
+    "grid gap-6",
+    open 
+      ? "grid-cols-1 lg:grid-cols-2 xl:grid-cols-3" // 1 col on mobile/tablet, 3 on desktop
+      : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3" // 1 on mobile, 2 on tablet, 3 on desktop
+  );
 
   return (
     <section className="relative overflow-hidden min-h-screen pb-8">
@@ -65,7 +75,7 @@ const AllProjects = () => {
             </TabsList>
 
             <TabsContent value="full-stack" className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className={gridClasses}>
                 {fullStackProjects.map((project, index) => (
                   <motion.div
                     key={project.slug}
@@ -80,7 +90,7 @@ const AllProjects = () => {
             </TabsContent>
 
             <TabsContent value="ui" className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className={gridClasses}>
                 {uiProjects.map((project, index) => (
                   <motion.div
                     key={project.slug}
@@ -95,7 +105,7 @@ const AllProjects = () => {
             </TabsContent>
 
             <TabsContent value="game" className="mt-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className={gridClasses}>
                 {gameProjects.map((project, index) => (
                   <motion.div
                     key={project.slug}

@@ -1,30 +1,27 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
-
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.9578 0.0058 264.5321);
+  --background: oklch(0.97 0.005 264.5321); /* Reduced from 0.9578 - slightly darker/warmer */
   --foreground: oklch(0.4355 0.0430 279.3250);
-  --card: oklch(1.0000 0 0);
+  --card: oklch(0.99 0.003 264); /* Slightly off-white instead of pure white */
   --card-foreground: oklch(0.4355 0.0430 279.3250);
-  --popover: oklch(0.8575 0.0145 268.4756);
+  --popover: oklch(0.95 0.008 268.4756); /* Warmer popover */
   --popover-foreground: oklch(0.4355 0.0430 279.3250);
   --primary: oklch(0.5547 0.2503 297.0156);
   --primary-foreground: oklch(1.0000 0 0);
-  --secondary: oklch(0.8575 0.0145 268.4756);
+  --secondary: oklch(0.94 0.010 268.4756); /* Warmer secondary */
   --secondary-foreground: oklch(0.4355 0.0430 279.3250);
-  --muted: oklch(0.9060 0.0117 264.5071);
+  --muted: oklch(0.96 0.008 264.5071); /* Softer muted */
   --muted-foreground: oklch(0.5471 0.0343 279.0837);
   --accent: oklch(0.6820 0.1448 235.3822);
   --accent-foreground: oklch(1.0000 0 0);
   --destructive: oklch(0.5505 0.2155 19.8095);
   --destructive-foreground: oklch(1.0000 0 0);
-  --border: oklch(0.8083 0.0174 271.1982);
-  --input: oklch(0.8575 0.0145 268.4756);
+  --border: oklch(0.89 0.012 271.1982); /* Softer borders */
+  --input: oklch(0.95 0.008 268.4756); /* Warmer input */
   --ring: oklch(0.5547 0.2503 297.0156);
   --chart-1: oklch(0.5547 0.2503 297.0156);
   --chart-2: oklch(0.6820 0.1448 235.3822);
@@ -186,3 +183,4 @@
     rgba(60, 51, 80, 0) 100%
   );
 }
+

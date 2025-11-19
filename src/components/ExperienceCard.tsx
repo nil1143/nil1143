@@ -24,28 +24,36 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
     <VerticalTimelineElement
       contentStyle={{
         background: isDark
-          ? "linear-gradient(135deg, #1d1836 0%, #2a2147 50%, #3d2e5a 100%)"
-          : "linear-gradient(135deg, #ffffff 0%, #f3f4f6 50%, #e5e7eb 100%)",
-        color: isDark ? "#fff" : "#1a202c",
+          ? "linear-gradient(to bottom right, hsl(var(--card)) 0%, hsl(var(--card)) 70%, hsl(var(--accent) / 0.15) 100%)"
+          : "linear-gradient(to bottom right, hsl(var(--card)) 0%, hsl(var(--card)) 70%, hsl(var(--accent) / 0.25) 100%)",
+        color: "hsl(var(--foreground))",
         boxShadow: isDark
-          ? "0 10px 30px rgba(29, 24, 54, 0.5)"
-          : "0 10px 30px rgba(0, 0, 0, 0.1)",
-        border: "none",
+          ? "0 10px 30px rgba(0, 0, 0, 0.5)"
+          : "0 10px 30px rgba(0, 0, 0, 0.15)",
+        border: isDark
+          ? "1px solid hsl(var(--border) / 0.3)"
+          : "1px solid hsl(var(--border) / 0.5)",
         borderRadius: "16px",
         padding: "2rem",
+        backdropFilter: "blur(10px)",
       }}
       contentArrowStyle={{
-        borderRight: isDark ? "7px solid #232631" : "7px solid #e5e7eb",
+        borderRight: isDark
+          ? "7px solid hsl(var(--border) / 0.3)"
+          : "7px solid hsl(var(--border) / 0.5)",
       }}
       date={experience.date}
       dateClassName={isDark ? "text-gray-300" : "text-gray-700"}
       iconStyle={{
         background: isDark
-          ? "linear-gradient(135deg, #232631 0%, #3d2e5a 100%)"
-          : "linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%)",
+          ? "linear-gradient(to bottom right, hsl(var(--card)) 0%, hsl(var(--accent) / 0.3) 100%)"
+          : "linear-gradient(to bottom right, hsl(var(--card)) 0%, hsl(var(--accent) / 0.4) 100%)",
         boxShadow: isDark
-          ? "0 0 20px rgba(35, 38, 49, 0.6)"
-          : "0 0 20px rgba(0, 0, 0, 0.1)",
+          ? "0 0 20px rgba(0, 0, 0, 0.5)"
+          : "0 0 20px rgba(0, 0, 0, 0.15)",
+        border: isDark
+          ? "1px solid hsl(var(--border) / 0.3)"
+          : "1px solid hsl(var(--border) / 0.5)",
       }}
       icon={
         <div className="flex justify-center items-center w-full h-full">

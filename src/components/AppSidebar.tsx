@@ -1,15 +1,11 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import {
-  Home,
-  CodeXml,
-  Briefcase,
-  ChevronDown,
-} from "lucide-react";
+import { Home, CodeXml, Briefcase, ChevronDown } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
@@ -69,12 +65,20 @@ const AppSidebar = () => {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton>
-              <Image src="/logo.png" alt="logo" width={20} height={20} />
+              <Image
+                src="/logo.png"
+                alt="logo"
+                width={24}
+                height={24}
+                className="w-auto h-auto shrink-0"
+              />
               <span className="ml-2">Tom&apos;s Portfolio</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
         <SidebarSeparator />
+
+        {/* Dashboard */}
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
@@ -111,7 +115,10 @@ const AppSidebar = () => {
 
           {/* Collapsible Full Stack */}
           {fullStackProjects.length > 0 && (
-            <Collapsible defaultOpen={isFullStackOpen} className="group/collapsible">
+            <Collapsible
+              defaultOpen={isFullStackOpen}
+              className="group/collapsible"
+            >
               <SidebarGroup>
                 <SidebarGroupLabel asChild>
                   <CollapsibleTrigger>
@@ -127,7 +134,10 @@ const AppSidebar = () => {
                           asChild
                           isActive={pathname === `/projects/${project.slug}`}
                         >
-                          <Link href={`/projects/${project.slug}`} className="text-xs">
+                          <Link
+                            href={`/projects/${project.slug}`}
+                            className="text-xs"
+                          >
                             {project.name}
                           </Link>
                         </SidebarMenuSubButton>
@@ -141,7 +151,10 @@ const AppSidebar = () => {
 
           {/* Collapsible UI Projects */}
           {uiProjects.length > 0 && (
-            <Collapsible defaultOpen={isUIProjectsOpen} className="group/collapsible">
+            <Collapsible
+              defaultOpen={isUIProjectsOpen}
+              className="group/collapsible"
+            >
               <SidebarGroup>
                 <SidebarGroupLabel asChild>
                   <CollapsibleTrigger>
@@ -157,7 +170,10 @@ const AppSidebar = () => {
                           asChild
                           isActive={pathname === `/projects/${project.slug}`}
                         >
-                          <Link href={`/projects/${project.slug}`} className="text-xs">
+                          <Link
+                            href={`/projects/${project.slug}`}
+                            className="text-xs"
+                          >
                             {project.name}
                           </Link>
                         </SidebarMenuSubButton>
@@ -171,7 +187,10 @@ const AppSidebar = () => {
 
           {/* Collapsible Games */}
           {gameProjects.length > 0 && (
-            <Collapsible defaultOpen={isGamesOpen} className="group/collapsible">
+            <Collapsible
+              defaultOpen={isGamesOpen}
+              className="group/collapsible"
+            >
               <SidebarGroup>
                 <SidebarGroupLabel asChild>
                   <CollapsibleTrigger>
@@ -187,7 +206,10 @@ const AppSidebar = () => {
                           asChild
                           isActive={pathname === `/projects/${project.slug}`}
                         >
-                          <Link href={`/projects/${project.slug}`} className="text-xs">
+                          <Link
+                            href={`/projects/${project.slug}`}
+                            className="text-xs"
+                          >
                             {project.name}
                           </Link>
                         </SidebarMenuSubButton>
@@ -200,6 +222,17 @@ const AppSidebar = () => {
           )}
         </SidebarGroup>
       </SidebarContent>
+      
+      {/* Footer */}
+      <SidebarFooter className="group-data-[state=collapsed]:hidden">
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <p className="text-sm text-center text-muted-foreground mb-1">
+              © 2025 Built by <span className="font-semibold">nil1143</span>
+            </p>
+          </SidebarMenuItem>
+        </SidebarMenu>
+      </SidebarFooter>
     </Sidebar>
   );
 };
