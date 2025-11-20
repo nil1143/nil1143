@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { Home, CodeXml, Briefcase, ChevronDown } from "lucide-react";
+import { Home, CodeXml, Briefcase, ChevronDown, Mail } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -37,6 +37,11 @@ const items = [
     title: "Work Experience",
     url: "/experience",
     icon: Briefcase,
+  },
+  {
+    title: "Contact",
+    url: "/contact",
+    icon: Mail,
   },
 ];
 

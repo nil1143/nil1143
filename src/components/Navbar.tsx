@@ -38,6 +38,13 @@ const Navbar = () => {
       ];
     }
 
+    if (pathname === "/contact") {
+      return [
+        { label: "Dashboard", href: "/" },
+        { label: "Contact", href: "/contact", isLast: true },
+      ]
+    }
+
     // Handle Projects routes
     if (pathname === "/projects") {
       return [
