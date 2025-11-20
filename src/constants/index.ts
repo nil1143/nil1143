@@ -11,7 +11,14 @@ import {
   SiHtml5,
   SiNodedotjs,
   SiVite,
+  SiGit,
+  SiPostgresql,
+  SiShadcnui,
+  SiNetlify,
+  SiVercel
 } from "react-icons/si";
+
+import { BiLogoVisualStudio } from "react-icons/bi";
 
 // Define technologies with their colors FIRST
 export const technologies = {
@@ -27,6 +34,12 @@ export const technologies = {
   express: { icon: SiExpress, name: "Express", color: "#000000" },
   vite: { icon: SiVite, name: "Vite", color: "#646CFF" },
   html5: { icon: SiHtml5, name: "HTML5", color: "#E34F26" },
+  git: { icon: SiGit, name: "Git", color: "#F05032" },
+  postgresql: { icon: SiPostgresql, name: "PostgreSQL", color: "#4169E1" },
+  vscode: { icon: BiLogoVisualStudio, name: "VS Code", color: "#007ACC" },
+  shadcn: { icon: SiShadcnui, name: "shadcn/ui", color: "#000000" },
+  vercel: { icon: SiVercel, name: "Vercel", color: "#000000" },
+  netlify: { icon: SiNetlify, name: "Netlify", color: "#00C7B7" },
 };
 
 import type { Experience } from "@/types/experience";
