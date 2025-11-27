@@ -1,4 +1,4 @@
-docs: update README.md<h1 align="center">Hi, I'm Tom</h1>
+<h1 align="center">Hi, I'm Tom</h1>
 
 <h3 align="center" style="font-size:23px">
   Frontend Developer <a href="https://jade-moonbeam-cd3195.netlify.app/">
