@@ -26,7 +26,7 @@ export interface Project {
   images?: string[];
   source_code_link: string;
   live_link: string;
-  category: "full-stack" | "ui" | "games";
+  category: "full-stack" | "frontend" | "games";
   features: Feature[];
   highlights: Highlight[];
 }

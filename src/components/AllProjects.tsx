@@ -14,7 +14,7 @@ const AllProjects = () => {
   const { open } = useSidebar(); // Get sidebar state
 
   const fullStackProjects = getProjectsByCategory("full-stack");
-  const uiProjects = getProjectsByCategory("ui");
+  const uiProjects = getProjectsByCategory("frontend");
   const gameProjects = getProjectsByCategory("games");
 
   // Dynamic grid: 1 col when sidebar open on tablet, 2 cols when closed
@@ -68,10 +68,10 @@ const AllProjects = () => {
           className="mt-12 px-6"
         >
           <Tabs defaultValue="full-stack" value={activeTab} onValueChange={setActiveTab}>
-            <TabsList className="grid w-full grid-cols-3">
+            <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="full-stack">Full Stack</TabsTrigger>
-              <TabsTrigger value="ui">UI Projects</TabsTrigger>
-              <TabsTrigger value="game">Games</TabsTrigger>
+              <TabsTrigger value="ui">Frontend</TabsTrigger>
+              {/* <TabsTrigger value="game">Games</TabsTrigger> */}
             </TabsList>
 
             <TabsContent value="full-stack" className="mt-8">

@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Home, CodeXml, Briefcase, ChevronDown, Mail } from "lucide-react";
 import {
   Sidebar,
@@ -25,7 +25,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "./ui/collapsible";
-import { projects, getProjectsByCategory } from "@/constants";
+import { getProjectsByCategory } from "@/constants";
 
 const items = [
   {
@@ -47,10 +47,11 @@ const items = [
 
 const AppSidebar = () => {
   const pathname = usePathname();
+  const router = useRouter();
 
   // Get projects by category
   const fullStackProjects = getProjectsByCategory("full-stack");
-  const uiProjects = getProjectsByCategory("ui");
+  const uiProjects = getProjectsByCategory("frontend");
   const gameProjects = getProjectsByCategory("games");
 
   // Check if any project in category is active
@@ -107,16 +108,27 @@ const AppSidebar = () => {
         {/* Projects */}
         <SidebarGroup>
           <SidebarGroupLabel>Projects</SidebarGroupLabel>
-          <SidebarMenu>
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild isActive={pathname === "/projects"}>
-                <Link href="/projects">
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={pathname === "/projects"}
+                  onClick={() => {
+                    router.push("/projects");
+                  }}
+                  className="cursor-pointer relative z-50"
+                  style={{
+                    pointerEvents: "auto",
+                    minHeight: "32px",
+                    width: "100%",
+                  }}
+                >
                   <CodeXml />
                   <span>All Projects</span>
-                </Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-          </SidebarMenu>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
 
           {/* Collapsible Full Stack */}
           {fullStackProjects.length > 0 && (
@@ -163,7 +175,7 @@ const AppSidebar = () => {
               <SidebarGroup>
                 <SidebarGroupLabel asChild>
                   <CollapsibleTrigger>
-                    UI Projects
+                    Frontend Projects
                     <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
                   </CollapsibleTrigger>
                 </SidebarGroupLabel>
@@ -227,7 +239,7 @@ const AppSidebar = () => {
           )}
         </SidebarGroup>
       </SidebarContent>
-      
+
       {/* Footer */}
       <SidebarFooter className="group-data-[state=collapsed]:hidden">
         <SidebarMenu>

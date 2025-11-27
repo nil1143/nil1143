@@ -27,7 +27,6 @@ import {
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/utils/motion";
-import { Particles } from "./ui/shadcn-io/particles";
 import { GridPattern } from "./ui/grid-pattern";
 
 const formSchema = z.object({
@@ -82,7 +81,7 @@ export default function ContactSection() {
       }
 
       toast.success("Message sent successfully!", {
-        description: "I'll get back to you as soon as possible.",
+        description: "I&apos;ll get back to you as soon as possible.",
       });
 
       form.reset();
@@ -101,14 +100,7 @@ export default function ContactSection() {
 
   return (
     <section className="relative min-h-screen overflow-hidden">
-      {/* <Particles
-        className="absolute inset-0"
-        quantity={100}
-        ease={80}
-        staticity={50}
-        color="#ffffff dark:#000000"
-        size={0.8}
-      /> */}
+
        <GridPattern
             width={40}
             height={40}
@@ -144,7 +136,7 @@ export default function ContactSection() {
                   Contact Form
                 </CardTitle>
                 <CardDescription>
-                  Fill out the form below and I'll get back to you within 24
+                  Fill out the form below and I&apos;ll get back to you within 24
                   hours.
                 </CardDescription>
               </CardHeader>

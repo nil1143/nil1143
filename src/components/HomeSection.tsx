@@ -73,7 +73,7 @@ const HomeSection = () => {
 
           <div className="flex flex-col w-auto gap-4 p-2">
             <p className="lg:text-[56px] text-[30px] font-light tracking-wider">
-              Hi, I'm <span className="text-[#915eff]">Tom</span>
+              Hi, I&apos;m <span className="text-[#915eff]">Tom</span>
             </p>
             <p className="mt-2 text-[12px] sm:text-[17px] max-w-3xl leading-[30px]">
               Front-end developer with hands-on experience building and
@@ -113,12 +113,12 @@ const HomeSection = () => {
           variants={fadeIn("right", "tween", 0.9, 0.8)}
           initial="hidden"
           animate="show"
-          className="mx-8 mb-12 justify-end flex"
+          className="mx-8 mb-12 justify-center flex"
         >
           <Card className="max-w-2xl bg-background/50 backdrop-blur-xs rounded-4xl border-border/50">
             <CardHeader>
               <CardTitle className="text-2xl sm:text-3xl font-light tracking-wider">
-               <div className="flex items-center gap-4"><FaLaptopCode /> <div>Skills & Technologies</div></div>
+               <div className="flex items-center gap-4"><FaLaptopCode /> <div className="text-sm md:text-lg">Skills & Technologies</div></div>
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">

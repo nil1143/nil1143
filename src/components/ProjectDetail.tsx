@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Project } from "@/types/project";
 import {
@@ -21,6 +20,7 @@ import {
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { ImageCarousel } from "./ImageCarousel";
+
 
 interface ProjectDetailProps {
   project: Project;

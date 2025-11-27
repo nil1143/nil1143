@@ -15,7 +15,7 @@ import {
   SiPostgresql,
   SiShadcnui,
   SiNetlify,
-  SiVercel
+  SiVercel,
 } from "react-icons/si";
 
 import { BiLogoVisualStudio } from "react-icons/bi";
@@ -119,7 +119,12 @@ export const projects: Project[] = [
     ],
     image: "/project-chat.png",
     images: [
-      "/project-chat.png",
+      "/screenshoots/streamify-dashboard.png",
+      "/screenshoots/streamify-onboarding.png",
+      "/screenshoots/streamify-notifications.png",
+      "/screenshoots/streamify-create.png",
+      "/screenshoots/streamify-chat.png",
+      "/screenshoots/streamify-call.png",
     ],
     source_code_link: "https://github.com/nil1143/streamify",
     live_link: "https://streamify-bmad.onrender.com",
@@ -180,14 +185,16 @@ export const projects: Project[] = [
     technologies: [
       technologies.typescript,
       technologies.nextjs,
-      technologies.nodejs, 
+      technologies.nodejs,
       technologies.prisma,
       technologies.stripe,
       technologies.tailwind,
     ],
     image: "/project-img-jobsearch.png",
     images: [
-      "/project-img-jobsearch.png",
+      "/screenshoots/job-search-onboarding.png",
+      "/screenshoots/job-search-home.png",
+      "/screenshoots/job-search-detail.png",
     ],
     source_code_link: "https://github.com/nil1143/job-search",
     live_link: "https://job-search-roan.vercel.app",
@@ -254,47 +261,56 @@ export const projects: Project[] = [
     ],
     image: "/project-img-event.png",
     images: [
-      "/project-img-event.png",
+      "/screenshoots/event-home2.png",
+      "/screenshoots/event-detail.png",
+      "/screenshoots/event-mytickets.png",
+      "/screenshoots/event-signup.png",
+      "/screenshoots/event-create.png",
+      "/screenshoots/event-settings.png",
     ],
     source_code_link: "https://github.com/nil1143/event-mern",
     live_link: "https://event-mern-nine.vercel.app/",
     category: "full-stack",
     features: [
       {
-        title: "Event Creation",
+        title: "Clerk Authentication",
         description:
-          "Create and manage events with custom details, pricing, and capacity",
+          "Secure user signup/sign-in, profiles, and session management",
       },
       {
-        title: "Ticket Booking",
-        description: "Secure ticket purchasing with Stripe payment integration",
-      },
-      {
-        title: "Event Discovery",
-        description: "Browse and search events by category, date, and location",
-      },
-      {
-        title: "User Dashboard",
+        title: "CRUD Event Management",
         description:
-          "Manage created events and view purchased tickets in one place",
+          "Create, read, update, delete events with metadata (date, location, description)",
+      },
+      {
+        title: "Ticket checkout",
+        description: "Secure checkout and payment handling with Stripe",
+      },
+      {
+        title: "Search & Filter",
+        description: "Filterable discovery and related-event recommendations",
+      },
+      {
+        title: "User Dashboard & Orders",
+        description:
+          "View and manage created events, tickets, and order search",
       },
     ],
     highlights: [
       {
-        title: "Payment Integration",
-        description: "Stripe Checkout for secure ticket purchases and refunds",
+        title: "Next.js Server Actions",
+        description:
+          "Server-side, type-safe mutations and simplified API surface",
         color: "purple",
       },
       {
-        title: "Image Upload",
-        description:
-          "Cloudinary integration for event image management and optimization",
+        title: "TypeScript-first codebase",
+        description: "Full typing for safety and better DX",
         color: "blue",
       },
       {
-        title: "Server Actions",
-        description:
-          "Next.js 14 Server Actions for type-safe mutations and data fetching",
+        title: "UploadThing/Cloudinary for images",
+        description: "Optimized, scalable image handling",
         color: "orange",
       },
     ],
@@ -320,50 +336,58 @@ export const projects: Project[] = [
     ],
     source_code_link: "https://github.com/nil1143/saas_landing_stripe",
     live_link: "https://saas-landing-pi.vercel.app/",
-    category: "ui",
-    
+    category: "frontend",
+
     // FEATURES: What the project has (user-facing)
     features: [
       {
         title: "Component Architecture",
-        description: "Reusable button, accordion, and testimonial components with props-based customization"
+        description:
+          "Reusable button, accordion, and testimonial components with props-based customization",
       },
       {
         title: "Interactive Pricing",
-        description: "Monthly/annual toggle with animated price transitions using react-countup"
+        description:
+          "Monthly/annual toggle with animated price transitions using react-countup",
       },
       {
         title: "Smooth Navigation",
-        description: "React-scroll integration with active link highlighting and offset-adjusted positioning"
+        description:
+          "React-scroll integration with active link highlighting and offset-adjusted positioning",
       },
       {
         title: "Custom Design System",
-        description: "Cohesive color palette, custom shadows, and typography scale for consistent branding"
+        description:
+          "Cohesive color palette, custom shadows, and typography scale for consistent branding",
       },
       {
         title: "Performance Optimized",
-        description: "Fast load times with lazy loading, code splitting, and optimized image assets"
-      }
+        description:
+          "Fast load times with lazy loading, code splitting, and optimized image assets",
+      },
     ],
-    
+
     // HIGHLIGHTS: How you built it (technical achievements)
     highlights: [
       {
         title: "Tailwind CSS Mastery",
-        description: "Extended framework with 9 custom gradients, shadow utilities, and pseudo-element patterns via index.css",
-        color: "purple"
+        description:
+          "Extended framework with 9 custom gradients, shadow utilities, and pseudo-element patterns via index.css",
+        color: "purple",
       },
       {
         title: "React State Optimization",
-        description: "Implemented CountUp with preserveValue prop to prevent counter resets during parent re-renders",
-        color: "blue"
+        description:
+          "Implemented CountUp with preserveValue prop to prevent counter resets during parent re-renders",
+        color: "blue",
       },
       {
         title: "Web Vitals Achievement",
-        description: "91+ performance and 100% accessibility Lighthouse scores through lazy loading and semantic HTML",
-        color: "orange"
-      }
-    ]
+        description:
+          "91+ performance and 100% accessibility Lighthouse scores through lazy loading and semantic HTML",
+        color: "orange",
+      },
+    ],
   },
 ];
 

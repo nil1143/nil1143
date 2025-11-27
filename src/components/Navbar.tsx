@@ -4,7 +4,7 @@ import React from "react";
 import { useSidebar } from "./ui/sidebar";
 import { ModeSwitcher } from "./mode-switcher";
 import { Button } from "./ui/button";
-import { GithubIcon, PanelLeftIcon } from "lucide-react";
+import { PanelLeftIcon } from "lucide-react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -42,7 +42,7 @@ const Navbar = () => {
       return [
         { label: "Dashboard", href: "/" },
         { label: "Contact", href: "/contact", isLast: true },
-      ]
+      ];
     }
 
     // Handle Projects routes
@@ -76,7 +76,12 @@ const Navbar = () => {
   return (
     <nav className="p-4 flex items-center justify-between sticky top-0 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 z-50">
       <div className="flex items-center gap-4">
-        <Button variant="outline" size="icon" className="hover:dark:text-white" onClick={toggleSidebar}>
+        <Button
+          variant="outline"
+          size="icon"
+          className="hover:dark:text-white"
+          onClick={toggleSidebar}
+        >
           <PanelLeftIcon className="h-4 w-4" />
         </Button>
         <ModeSwitcher />
