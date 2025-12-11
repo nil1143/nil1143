@@ -47,16 +47,19 @@ import type { Project } from "@/types/project";
 
 export const experiences: Experience[] = [
   {
-    title: "Independent / Contract",
-    company_name: "Freelance Frontend Developer",
+    title: "Independent Developer",
+    company_name: "Side Projects & Open-Source Contributions",
     icon: "/shangri-la.webp",
     iconBg: "#383E56",
-    date: "Apr 2024 -  Oct 2024",
+    date: "Apr 2023 -  Present",
     points: [
-      "Built responsive, accessible front‑end interfaces from Figma designs using React and modern CSS.",
-      "Implemented client-side state, integrated REST APIs and handled authentication flows for small business projects.",
-      "Deployed apps to Vercel and iterated based on client feedback to improve UX and performance.",
-      "Collaborated directly with founders and designers to scope work, deliver milestones, and maintain documentation (see related projects).",
+      "Built and shipped multiple production-grade full-stack applications used by real users (live demos + source code publicly available).",
+      "Deployed projects to Vercel, Netlify and Render with custom domains, CI/CD, analytics, and performance monitoring.",
+      "Designed and open-sourced reusable component libraries and mini design systems (shadcn/ui-based) used in all projects for consistency and speed.",
+      "Regularly optimize for Core Web Vitals and accessibility (WCAG 2.1 AA compliant).",
+      "Streamify App – Language-learning chat app. Features include real-time video chat, friend requests, live theming, responsive UI across devices, and end-to-end encrypted messaging.",
+      "Evently App – Full-stack event platform. Implemented authentication, CRUD event management, ticket checkout and user dashboard.",
+      "Job Search Platform – MERN stack job board with secure authentication, job filtering and responsive design."
     ],
   },
   {
@@ -73,20 +76,20 @@ export const experiences: Experience[] = [
       "Maintained accurate case records and prioritised escalations to improve customer satisfaction.",
     ],
   },
-  {
-    title: "Self‑directed / Limerick College",
-    company_name: "Start Coding Journey",
-    icon: "/1826.webp",
-    iconBg: "#E6DEDD",
-    date: "Dec 2021 - current",
-    points: [
-      "Completed Web Authoring QQI Level 5 (Limerick College) — learned practical HTML, CSS and JavaScript fundamentals.",
-      "Continued as a self‑taught developer, mastering responsive design and modern CSS like Tailwind to build polished UIs.",
-      "Adopted React and built single‑page apps, handling client‑side state and integrating REST APIs.",
-      "Progressed to full‑stack projects (Next.js / Node / MongoDB), deployed apps and maintained detailed READMEs.",
-      "Document and iterate on projects based on feedback — skills transferable to collaborative Agile teams.",
-    ],
-  },
+  // {
+  //   title: "Self‑directed / Limerick College",
+  //   company_name: "Start Coding Journey",
+  //   icon: "/1826.webp",
+  //   iconBg: "#E6DEDD",
+  //   date: "Dec 2021 - current",
+  //   points: [
+  //     "Completed Web Authoring QQI Level 5 (Limerick College) — learned practical HTML, CSS and JavaScript fundamentals.",
+  //     "Continued as a self‑taught developer, mastering responsive design and modern CSS like Tailwind to build polished UIs.",
+  //     "Adopted React and built single‑page apps, handling client‑side state and integrating REST APIs.",
+  //     "Progressed to full‑stack projects (Next.js / Node / MongoDB), deployed apps and maintained detailed READMEs.",
+  //     "Document and iterate on projects based on feedback — skills transferable to collaborative Agile teams.",
+  //   ],
+  // },
   {
     title: "Kitchen supervisor / Full Time",
     company_name: "Adare Manor Hotel",
