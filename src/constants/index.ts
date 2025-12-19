@@ -59,7 +59,7 @@ export const experiences: Experience[] = [
       "Regularly optimize for Core Web Vitals and accessibility (WCAG 2.1 AA compliant).",
       "Streamify App – Language-learning chat app. Features include real-time video chat, friend requests, live theming, responsive UI across devices, and end-to-end encrypted messaging.",
       "Evently App – Full-stack event platform. Implemented authentication, CRUD event management, ticket checkout and user dashboard.",
-      "Job Search Platform – MERN stack job board with secure authentication, job filtering and responsive design."
+      "Job Search Platform – MERN stack job board with secure authentication, job filtering and responsive design.",
     ],
   },
   {
@@ -389,6 +389,80 @@ export const projects: Project[] = [
         description:
           "91+ performance and 100% accessibility Lighthouse scores through lazy loading and semantic HTML",
         color: "orange",
+      },
+    ],
+  },
+  {
+    slug: "agency-app",
+    name: "Agency App",
+    description:
+      "Modern digital agency website built with React + Vite. Showcases services, portfolio, team members, and a contact form with Web3Forms — optimized for performance, smooth animations, and responsive design.",
+    technologies: [
+      technologies.react,
+      technologies.vite,
+      technologies.tailwind,
+      technologies.javascript,
+    ],
+    image: "/screenshoots/agency4.png",
+    images: [
+      "/screenshoots/agency4.png",
+      "/screenshoots/agency5.png",
+      "/screenshoots/agency6.png",
+    ],
+    source_code_link: "https://github.com/nil1143/agency-app",
+    live_link: "https://calm-sopapillas-ca278b.netlify.app/",
+    category: "frontend",
+    features: [
+      {
+        title: "Theme Toggle System",
+        description:
+          "Light/dark mode with localStorage persistence and OS preference detection for consistent theming across sessions.",
+      },
+      {
+        title: "Custom Animated Cursor",
+        description:
+          "Dual-element cursor (dot + ring) with requestAnimationFrame for smooth, low‑overhead tracking and interactive states.",
+      },
+      {
+        title: "Interactive Services & Portfolio",
+        description:
+          "Mouse-tracking gradients and hover scale transitions for service cards and portfolio items to increase engagement.",
+      },
+      {
+        title: "Contact Form with Web3Forms",
+        description:
+          "Client-side form submissions via Web3Forms with real-time toast feedback and robust error handling—no backend required.",
+      },
+      {
+        title: "Scroll-Based Animations & Responsive Nav",
+        description:
+          "Motion-powered entrance animations with viewport detection and a sticky, mobile-friendly navbar for smooth navigation.",
+      },
+    ],
+    highlights: [
+      {
+        title: "Theme Persistence & System Preference",
+        description:
+          "Unified theme management using localStorage and prefers-color-scheme detection with dynamic class toggling for Tailwind dark mode.",
+        color: "purple",
+      },
+      {
+        title: "Interactive Gradient Implementation",
+        description:
+          "Mouse-relative gradient overlay using getBoundingClientRect(), blur filters and mix-blend-lighten for a polished, performant effect.",
+        color: "orange",
+      },
+      {
+        title: "Serverless Form Integration",
+        description:
+          "Seamless Web3Forms integration with toast notifications for success/error states, avoiding the need for a custom backend.",
+        color: "blue",
+      },
+      {
+        title: "Performance & Build Optimizations",
+        description:
+          "Vite bundling, viewport-aware animation triggers, and React 19 optimizations to reduce render work and improve Lighthouse scores.",
+        color: "purple",
       },
     ],
   },
