@@ -107,80 +107,6 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    slug: "streamify",
-    name: "Streamify Chat App",
-    description:
-      "MERN stack React app with a production-ready backend. Frontend focuses on discovering friend-request flow, real-time chat, theming, and responsive UI.",
-    technologies: [
-      technologies.javascript,
-      technologies.react,
-      technologies.vite, // Add - mentioned in description: "React + Vite"
-      technologies.nodejs, // Add - MERN stack = Node.js backend
-      technologies.express, // Add - Express backend
-      technologies.mongodb,
-      technologies.tailwind,
-    ],
-    image: "/project-chat.png",
-    images: [
-      "/screenshoots/streamify-dashboard.png",
-      "/screenshoots/streamify-onboarding.png",
-      "/screenshoots/streamify-notifications.png",
-      "/screenshoots/streamify-create.png",
-      "/screenshoots/streamify-chat.png",
-      "/screenshoots/streamify-call.png",
-    ],
-    source_code_link: "https://github.com/nil1143/streamify",
-    live_link: "https://streamify-bmad.onrender.com",
-    category: "full-stack",
-    features: [
-      {
-        title: "Real-time Messaging",
-        description:
-          "Instant chat with language partners using Stream Chat SDK with message persistence",
-      },
-      {
-        title: "Friend Discovery System",
-        description:
-          "Browse and connect with language partners through smart friend request workflow",
-      },
-      {
-        title: "Video Calling",
-        description:
-          "Built-in video calls powered by Stream Video SDK with shareable call links",
-      },
-      {
-        title: "Profile Customization",
-        description:
-          "Complete onboarding with language preferences, location, and bio setup",
-      },
-      {
-        title: "Theme Switcher",
-        description:
-          "31 DaisyUI themes with localStorage persistence for personalized experience",
-      },
-    ],
-    highlights: [
-      {
-        title: "React Query Integration",
-        description:
-          "Efficient server state management with caching and automatic refetching for smooth UX",
-        color: "blue",
-      },
-      {
-        title: "Responsive Design",
-        description:
-          "Mobile-first approach with Tailwind CSS and conditional sidebar rendering for all screen sizes",
-        color: "purple",
-      },
-      {
-        title: "Authentication Flow",
-        description:
-          "Secure JWT-based auth with HTTP-only cookies and protected routes using custom hooks",
-        color: "orange",
-      },
-    ],
-  },
-  {
     slug: "job-search",
     name: "JobSearch App",
     description:
@@ -314,6 +240,80 @@ export const projects: Project[] = [
       {
         title: "UploadThing/Cloudinary for images",
         description: "Optimized, scalable image handling",
+        color: "orange",
+      },
+    ],
+  },
+  {
+    slug: "streamify",
+    name: "Streamify Chat App",
+    description:
+      "MERN stack React app with a production-ready backend. Frontend focuses on discovering friend-request flow, real-time chat, theming, and responsive UI.",
+    technologies: [
+      technologies.javascript,
+      technologies.react,
+      technologies.vite, // Add - mentioned in description: "React + Vite"
+      technologies.nodejs, // Add - MERN stack = Node.js backend
+      technologies.express, // Add - Express backend
+      technologies.mongodb,
+      technologies.tailwind,
+    ],
+    image: "/project-chat.png",
+    images: [
+      "/screenshoots/streamify-dashboard.png",
+      "/screenshoots/streamify-onboarding.png",
+      "/screenshoots/streamify-notifications.png",
+      "/screenshoots/streamify-create.png",
+      "/screenshoots/streamify-chat.png",
+      "/screenshoots/streamify-call.png",
+    ],
+    source_code_link: "https://github.com/nil1143/streamify",
+    live_link: "https://streamify-bmad.onrender.com",
+    category: "full-stack",
+    features: [
+      {
+        title: "Real-time Messaging",
+        description:
+          "Instant chat with language partners using Stream Chat SDK with message persistence",
+      },
+      {
+        title: "Friend Discovery System",
+        description:
+          "Browse and connect with language partners through smart friend request workflow",
+      },
+      {
+        title: "Video Calling",
+        description:
+          "Built-in video calls powered by Stream Video SDK with shareable call links",
+      },
+      {
+        title: "Profile Customization",
+        description:
+          "Complete onboarding with language preferences, location, and bio setup",
+      },
+      {
+        title: "Theme Switcher",
+        description:
+          "31 DaisyUI themes with localStorage persistence for personalized experience",
+      },
+    ],
+    highlights: [
+      {
+        title: "React Query Integration",
+        description:
+          "Efficient server state management with caching and automatic refetching for smooth UX",
+        color: "blue",
+      },
+      {
+        title: "Responsive Design",
+        description:
+          "Mobile-first approach with Tailwind CSS and conditional sidebar rendering for all screen sizes",
+        color: "purple",
+      },
+      {
+        title: "Authentication Flow",
+        description:
+          "Secure JWT-based auth with HTTP-only cookies and protected routes using custom hooks",
         color: "orange",
       },
     ],

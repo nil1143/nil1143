@@ -1,19 +1,25 @@
 <h1 align="center">Hi, I'm Tom</h1>
 
 <h3 align="center" style="font-size:23px">
-  Frontend Developer <a href="https://jade-moonbeam-cd3195.netlify.app/">
-    <img src="https://img.shields.io/badge/Portfolio-543DE0?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" style="height:22px;">
+  Frontend Developer
+
+<br>
+    <a href="https://jade-moonbeam-cd3195.netlify.app/"><img src="https://img.shields.io/badge/📄_Portfolio-Live-green?style=for-the-badge" alt="Download Resume" />
   </a> 
 </h3>
 
-<h2 align="center">About Me</h2>
+<p align="center">
+  <a href="https://jade-moonbeam-cd3195.netlify.app/resume">
+    <img src="https://img.shields.io/badge/📄_Resume-Download-red?style=for-the-badge" alt="Download Resume" />
+  </a>
+</p>
 
+<h2 align="center">About Me</h2>
 
 <h4 align="center">
 I design and build user‑first web apps end‑to‑end. On the frontend I ship polished React/Next.js interfaces; on the backend I wire up Node, MongoDB, and third‑party APIs like Stripe. Recent work spans real‑time chat, event management, and job platforms. I thrive on turning complex requirements into simple, reliable UX and iterating quickly based on feedback<h4>
 
 ---
-
 
 <h2 align="center">Languages & Frameworks & Tools I  work with </h2>
 <br>
@@ -38,10 +44,7 @@ Express, Git
 [![Django][Django]][Django-url]
 [![Bootstrap][Bootstrap]][Bootstrap-url]
 
-
 </div>
-
-
 
 <br>
 
@@ -52,39 +55,29 @@ Express, Git
 <h3>Streamify</h3>
 <h4>Next.js 15, TypeScript, MongoDB, DaisyUI</h4>
 <a href="https://github.com/nil1143/streamify">
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=streamify&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e"/>
+<img align="center" src="./public/project-chat.png" alt="Streamify Project" width="600"/>
 </a>
-
+<hr>
 
 <h3>Job Search</h3>
 <h4>Next.js 15, TypeScript</h4>
 <a href="https://github.com/nil1143/job-search">
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=job-search&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e"/>
+<img align="center" src="./public/project-img-jobsearch.png" alt="Job Search Project" width="600"/>
 </a>
+<hr>
 
 <h3>Evently Booking App</h3>
 <h4>Next.js 15, TypeScript</h4>
 <a href="https://github.com/nil1143/event-mern">
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=event-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" /> </a>
+<img align="center" src="./public/project-img-event.png" alt="Evently Booking App Project" width="600"/>
+</a>
+<hr>
 
 <h3>nilAI</h3>
 <h4>React, Node.js</h4>
 <a href="https://github.com/nil1143/saas_landing_stripe">
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=saas_landing_stripe&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
+<img align="center" src="./public/project-img-nilai.png" alt="nilAI Project" width="600"/>
 </a>
-
-<!-- <h3>Spotify MERN</h3>
-<h4>React, Node.js</h4>
-
-<a href="https://github.com/nil1143/spotify-mern">
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=spotify-mern&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
-</a>
-
-<h3>Doc Appointment</h3>
-<h4>React</h4>
-<a href="https://github.com/nil1143/react-doc-appointment">
-<img align="center" src="https://github-readme-stats.vercel.app/api/pin?username=nil1143&repo=react-doc-appointment&title_color=6aa6f8&icon_color=6aa6f8&text_color=9f9f9f&bg_color=22272e" alt="nilai" />
-</a> -->
 
 </div>
 <br>
@@ -101,7 +94,6 @@ tnil1143@gmail.com
 ```
 
 [![Email Badge](https://img.shields.io/badge/Gmail-Contact_Me-green?style=flat-square&logo=gmail&logoColor=orange&labelColor=3A3B3C&color=orange)](mailto:tnil1143@gmail.com)
-
 
 or check my profiles
 
