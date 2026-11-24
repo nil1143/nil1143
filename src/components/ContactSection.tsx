@@ -81,7 +81,7 @@ export default function ContactSection() {
       }
 
       toast.success("Message sent successfully!", {
-        description: "I&apos;ll get back to you as soon as possible.",
+        description: "Tom will get back to you as soon as possible.",
       });
 
       form.reset();

@@ -23,13 +23,19 @@ const contactSchema = z.object({
 export async function POST(req: Request) {
       // Check rate limit
   const ip = req.headers.get("x-forwarded-for") ?? "127.0.0.1";
-  const { success } = await ratelimit.limit(ip);
 
-  if (!success) {
-    return NextResponse.json(
-      { error: "Too many requests. Please try again later." },
-      { status: 429 }
-    );
+  try {
+    const { success } = await ratelimit.limit(ip);
+
+    if (!success) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+  } catch (error) {
+    // Fail open: don't block submissions if the rate limiter backend is unreachable
+    console.error("Rate limiter error:", error);
   }
 
   try {
