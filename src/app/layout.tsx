@@ -6,11 +6,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 import AppSidebar from "@/components/AppSidebar";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import Navbar from "@/components/Navbar";
-import { cookies } from "next/headers";
 import { Toaster } from "@/components/ui/sonner";
 
 const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-poppins",
 });
@@ -20,15 +19,11 @@ export const metadata: Metadata = {
   description: "Portfolio built by nil1143",
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const cookieStore = await cookies()
-  const defaultOpen = cookieStore.get("sidebar_state")?.value === "true"
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -40,7 +35,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SidebarProvider defaultOpen={defaultOpen} >
+          <SidebarProvider defaultOpen>
           <AppSidebar />
           <main className="w-full">
             <Navbar />

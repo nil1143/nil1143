@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Boxes } from "./ui/shadcn-io/background-boxes";
+import { GridPattern } from "./ui/grid-pattern";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Button } from "./ui/button";
@@ -41,7 +41,11 @@ const skills = {
 const HomeSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      <Boxes className="absolute inset-0" />
+      <GridPattern
+        width={40}
+        height={40}
+        className="absolute [mask-image:radial-gradient(1200px_circle_at_center,white,transparent)] opacity-50 inset-0 skew-y-12"
+      />
 
       <div className="flex flex-col z-20 px-4 mx-auto gap-8">
         {/* Introduction */}
